@@ -17,9 +17,8 @@
 	<a href={post.url} class="project-link">
 		<div class="card-image">
 			<img
-				data-src={post.coverImage}
+				data-src={post.backgroundImageSource}
 				alt="thumbnail"
-				title={post.imageSrc}
 				use:lazyImage={{ threshold: 0.5 }}
 			/>
 		</div>
@@ -30,7 +29,7 @@
 				<span class="card-title">{post.title}</span>
 			</a>
 			<p class="card-text">
-				{post.description}
+				{post.shortDescription}
 			</p>
 			<!-- tags -->
 			{#if post.tags}
