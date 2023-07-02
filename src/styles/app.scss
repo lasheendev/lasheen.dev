@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	color: $clr-fg-3;
+	background: $bg;
+	font-family: $ui-font;
+}
+
+input,
+button,
+textarea,
+select {
+	border: none;
+}
