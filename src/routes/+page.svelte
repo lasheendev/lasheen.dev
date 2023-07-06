@@ -5,6 +5,15 @@
 	import phone from '../assets/images/illustration-phones.svg';
 </script>
 
+<svelte:head>
+	<title>lasheen.dev | Portfolio</title>
+	<meta name="title" content="lasheen.dev | portfolio" />
+	<meta
+		name="description"
+		content="Welcome to lasheen.dev, your premier destination for cutting-edge software development solutions. As an up and coming software development agency, we are dedicated to providing our clients with innovative and customized software solutions that empower their businesses in the digital age. With a team of highly skilled and experienced software engineers, designers, and project managers, we offer a wide range of services tailored to meet the unique needs of each client. From concept to deployment, we are committed to delivering top-notch software products that drive efficiency, enhance user experiences, and maximize business potential. Contact us today to discuss your software development needs and let us help you unlock the true potential of your business through innovative technology solutions."
+	/>
+</svelte:head>
+
 <main>
 	<section id="intro">
 		<h1>Turn your amazing ideas into reality</h1>
@@ -63,7 +72,7 @@
 				<div>
 					<h2>Desktop and Web Development</h2>
 					<p>
-						In addition to mobile app development, we offers
+						In addition to mobile app development, we offer
 						top-notch desktop and web development services. With our expertise in multiple
 						programming languages, frameworks, and platforms, we have the versatility to build
 						powerful solutions for any platform. Whether you need a desktop software application, a
