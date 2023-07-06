@@ -15,6 +15,7 @@
 			const docSnapshot =  await getDoc(docRef);
 			if (docSnapshot.exists) {
 				latestPosts = Object.values(latestPosts = docSnapshot.data()['projects']);
+				latestPosts = latestPosts.sort((a, b) => (a.order > b.order) ? 1 : -1)
 				
 				
 			} else {
