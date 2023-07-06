@@ -17,6 +17,11 @@
 				latestPosts = Object.values(latestPosts = docSnapshot.data()['projects']);
 				latestPosts = latestPosts.sort((a, b) => (a.order > b.order) ? 1 : -1)
 				
+				latestPosts.forEach((post, index) => {
+					post['id'] = Object.keys(docSnapshot.data()['projects'])[index];
+				});
+
+				
 				
 			} else {
 				console.log('Document not found');

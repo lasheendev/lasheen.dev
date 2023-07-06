@@ -7,6 +7,7 @@
 	if (post.tags) {
 		post.tags = post.tags.slice(0, 2);
 	}
+	var url = 'projects/' + post.id;
 </script>
 
 <div
@@ -14,7 +15,7 @@
 	in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }}
 	style={`--color: ${post.color}`}
 >
-	<a href={post.url} class="project-link">
+	<a href={url} class="project-link">
 		<div class="card-image">
 			<img
 				data-src={post.backgroundImageSource}
@@ -25,7 +26,7 @@
 	</a>
 	<div class="card-content">
 		<div class="card-info">
-			<a href={post.url} class="project-link" data-sveltekit-preload-data="hover">
+			<a href={url} class="project-link" data-sveltekit-preload-data="hover">
 				<span class="card-title">{post.title}</span>
 			</a>
 			<p class="card-text">
