@@ -13,7 +13,6 @@
 <div
 	class="card"
 	in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }}
-	style={`--color: ${post.color}`}
 >
 	<a href={url} class="project-link">
 		<div class="card-image">
@@ -36,12 +35,7 @@
 			{#if post.tags}
 				<div class="tags">
 					{#each post.tags as tag}
-						<div
-							href="/blogs/explore/{tag}"
-							class="tag-link"
-							title="Tag"
-							style="--color: {post.color}"
-						>
+						<div class="tag-link">
 							<Icon icon="mdi:pound" /><span class="tag-name">{tag}</span>
 						</div>
 					{/each}
