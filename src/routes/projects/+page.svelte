@@ -15,11 +15,12 @@
 			const docSnapshot =  await getDoc(docRef);
 			if (docSnapshot.exists) {
 				latestPosts = Object.values(latestPosts = docSnapshot.data()['projects']);
-				latestPosts = latestPosts.sort((a, b) => (a.order > b.order) ? 1 : -1)
 				
 				latestPosts.forEach((post, index) => {
 					post['id'] = Object.keys(docSnapshot.data()['projects'])[index];
 				});
+
+				latestPosts = latestPosts.sort((a, b) => (a.order > b.order) ? 1 : -1)
 
 				
 				
