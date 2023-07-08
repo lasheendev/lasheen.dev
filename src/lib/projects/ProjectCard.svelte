@@ -11,20 +11,16 @@
 </script>
 
 <div class="card" in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }}>
-	<a href={url} class="project-link">
-		<div class="card-image">
-			<img
-				data-src={project.backgroundImageSource}
-				alt="thumbnail"
-				use:lazyImage={{ threshold: 0.5 }}
-			/>
-		</div>
-	</a>
+	<div class="card-image">
+		<img
+			data-src={project.backgroundImageSource}
+			alt="thumbnail"
+			use:lazyImage={{ threshold: 0.5 }}
+		/>
+	</div>
 	<div class="card-content">
 		<div class="card-info">
-			<a href={url} class="project-link" data-sveltekit-preload-data="hover">
-				<span class="card-title">{project.title}</span>
-			</a>
+			<span class="card-title">{project.title}</span>
 			<p class="card-text">
 				{project.shortDescription}
 			</p>
@@ -40,7 +36,7 @@
 			{/if}
 			<div class="actions">
 				{#each Object.entries(project.access) as [key, value]}
-					<a href={value.url} class="btn" title={key} style='--color: {value.color}'>
+					<a href={value.url} class="btn" title={key} style="--color: {value.color}">
 						<Icon icon={value.icon} />
 					</a>
 				{/each}
@@ -71,10 +67,6 @@
 				object-fit: cover;
 				object-position: center center !important;
 				transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-				@include hover {
-					transform: scale(1.05);
-				}
 			}
 		}
 
@@ -158,7 +150,6 @@
 
 					background-color: var(--color);
 					color: $clr-fg-2;
-					
 
 					font-size: 20px;
 					cursor: pointer;
