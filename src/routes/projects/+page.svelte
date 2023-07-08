@@ -6,7 +6,7 @@
 	import { doc, getDoc } from "firebase/firestore";
 
 
-	let latestPosts = [];
+	let latestProjects = [];
 	
 
 	const docRef = doc(db, "Data", "projects_screen");
@@ -14,13 +14,13 @@
 		try {
 			const docSnapshot =  await getDoc(docRef);
 			if (docSnapshot.exists) {
-				latestPosts = Object.values(latestPosts = docSnapshot.data()['projects']);
+				latestProjects = Object.values(latestProjects = docSnapshot.data()['projects']);
 				
-				latestPosts.forEach((post, index) => {
+				latestProjects.forEach((post, index) => {
 					post['id'] = Object.keys(docSnapshot.data()['projects'])[index];
 				});
 
-				latestPosts = latestPosts.sort((a, b) => (a.order > b.order) ? 1 : -1)
+				latestProjects = latestProjects.sort((a, b) => (a.order > b.order) ? 1 : -1)
 
 				
 				
@@ -35,7 +35,7 @@
 
 <section class="latest">
 	<h2>Projects</h2>
-	<ProjectsGrid posts={latestPosts} />
+	<ProjectsGrid projects={latestProjects} />
 </section>
 
 <style lang="scss">

@@ -1,13 +1,13 @@
 <script>
 	import PostCard from './ProjectCard.svelte';
-	export let posts;
+	export let projects;
 
 	let grid;
 </script>
 
 <div class="projects-grid" bind:this={grid}>
-	{#each posts as post, i}
-		<PostCard {post} {i} />
+	{#each projects as project, i}
+		<PostCard project={project} {i} />
 	{/each}
 </div>
 

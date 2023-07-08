@@ -2,22 +2,19 @@
 	import { fly } from 'svelte/transition';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import Icon from '@iconify/svelte';
-	export let post;
+	export let project;
 	export let i;
-	if (post.tags) {
-		post.tags = post.tags.slice(0, 2);
+	if (project.tags) {
+		project.tags = project.tags.slice(0, 2);
 	}
-	var url = 'projects/' + post.id;
+	var url = 'projects/' + project.id;
 </script>
 
-<div
-	class="card"
-	in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }}
->
+<div class="card" in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }}>
 	<a href={url} class="project-link">
 		<div class="card-image">
 			<img
-				data-src={post.backgroundImageSource}
+				data-src={project.backgroundImageSource}
 				alt="thumbnail"
 				use:lazyImage={{ threshold: 0.5 }}
 			/>
@@ -26,21 +23,28 @@
 	<div class="card-content">
 		<div class="card-info">
 			<a href={url} class="project-link" data-sveltekit-preload-data="hover">
-				<span class="card-title">{post.title}</span>
+				<span class="card-title">{project.title}</span>
 			</a>
 			<p class="card-text">
-				{post.shortDescription}
+				{project.shortDescription}
 			</p>
 			<!-- tags -->
-			{#if post.tags}
+			{#if project.tags}
 				<div class="tags">
-					{#each post.tags as tag}
+					{#each project.tags as tag}
 						<div class="tag-link">
 							<Icon icon="mdi:pound" /><span class="tag-name">{tag}</span>
 						</div>
 					{/each}
 				</div>
 			{/if}
+			<div class="actions">
+				{#each Object.entries(project.access) as [key, value]}
+					<a href={value.url} class="btn" title={key} style='--color: {value.color}'>
+						<Icon icon={value.icon} />
+					</a>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>
@@ -134,6 +138,33 @@
 					font-family: $ui-font;
 					font-weight: 500;
 					color: $clr-fg-4;
+				}
+			}
+			.actions {
+				position: absolute;
+				right: 1rem;
+				bottom: 1rem;
+
+				overflow: hidden;
+				gap: 0.5rem;
+				display: flex;
+
+				.btn {
+					overflow: hidden;
+
+					aspect-ratio: 1;
+					padding: 0.5em;
+					border-radius: 0.5rem;
+
+					background-color: var(--color);
+					color: $clr-fg-2;
+					
+
+					font-size: 20px;
+					cursor: pointer;
+					@include hover {
+						filter: brightness(0.8);
+					}
 				}
 			}
 		}
