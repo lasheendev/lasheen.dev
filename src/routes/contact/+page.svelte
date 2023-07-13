@@ -1,5 +1,16 @@
 <script>
-	function onSubmit(e) {}
+	import { collection, addDoc, serverTimestamp  } from "firebase/firestore";
+	import { db } from '$lib/firebase';
+	async function onSubmit(e) {
+		await addDoc(collection(db, "Messages"), {
+			name: e.target.Name.value,
+			email: e.target.Email.value,
+			subject: e.target.Subject.value,
+			messageText: e.target.Message.value,
+			timestamp: serverTimestamp(),
+		});
+		e.target.reset();
+	}
 </script>
 
 <div class="contact">
