@@ -1,37 +1,29 @@
 <script>
-	import ProjectsGrid from '$lib/projects/ProjectsGrid.svelte';
-	import { onMount } from 'svelte';
+    import ProjectsGrid from '$lib/projects/ProjectsGrid.svelte';
+    import { onMount } from 'svelte';
 
-	import { db } from '$lib/firebase';
-	import { doc, getDoc } from "firebase/firestore";
+    let latestProjects = [];
 
+    const githubUrl = 'https://raw.githubusercontent.com/lasheendev/lasheen.dev/refs/heads/master/json/projects.json';
 
-	let latestProjects = [];
-	
+    async function fetchProjects() {
+        const response = await fetch(githubUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    }
 
-	const docRef = doc(db, "Data", "projects_screen");
-	onMount(async () => {
-		try {
-			const docSnapshot =  await getDoc(docRef);
-			if (docSnapshot.exists) {
-				latestProjects = Object.values(latestProjects = docSnapshot.data()['projects']);
-				
-				latestProjects.forEach((post, index) => {
-					post['id'] = Object.keys(docSnapshot.data()['projects'])[index];
-				});
-
-				latestProjects = latestProjects.sort((a, b) => (a.order > b.order) ? 1 : -1)
-
-				
-				
-			} else {
-				console.log('Document not found');
-			}
-		} catch (error) {
-			console.error('Error fetching Firestore document:', error);
-		}
-	});
+    onMount(async () => {
+        try {
+            const data = await fetchProjects();
+            latestProjects = Object.values(data);
+        } catch (error) {
+            console.error('Error fetching projects:', error);
+        }
+    });
 </script>
+
 
 <section class="latest">
 	<h2>Projects</h2>
