@@ -22,7 +22,7 @@
 		},
 		{
 			name: 'LinkedIn',
-			url: 'https://www.linkedin.com/company/lasheendevظ',
+			url: 'https://www.linkedin.com/company/lasheendev',
 			icon: 'mdi:linkedin',
 			color: '#0077b5'
 		}
