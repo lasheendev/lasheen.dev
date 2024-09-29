@@ -26,7 +26,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="design">
+	<section id="whatwedo">
 		<div class="paragraph">
 			<article>
 				<div>
@@ -47,7 +47,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="art">
+	<section id="mobile-dev">
 		<img id="phone" src={phone} alt="Phone" />
 
 		<article>
@@ -62,7 +62,7 @@
 			</p>
 		</article>
 	</section>
-	<section id="reason">
+	<section id="desktop-web-dev">
 		<div class="paragraph">
 			<div class="backgroundImg2">
 				<img src={laptop} alt="Laptop" />
@@ -72,12 +72,11 @@
 				<div>
 					<h2>Desktop and Web Development</h2>
 					<p>
-						In addition to mobile app development, we offer
-						top-notch desktop and web development services. With our expertise in multiple
-						programming languages, frameworks, and platforms, we have the versatility to build
-						powerful solutions for any platform. Whether you need a desktop software application, a
-						responsive website, or a complex web portal, we have the skills and experience to
-						deliver outstanding results.
+						In addition to mobile app development, we offer top-notch desktop and web development
+						services. With our expertise in multiple programming languages, frameworks, and
+						platforms, we have the versatility to build powerful solutions for any platform. Whether
+						you need a desktop software application, a responsive website, or a complex web portal,
+						we have the skills and experience to deliver outstanding results.
 					</p>
 				</div>
 			</article>
@@ -174,13 +173,18 @@
 				}
 			}
 		}
-		#art {
+
+		#whatwedo {
+			margin-top: 20rem;
+		}
+		#mobile-dev {
+			margin-top: 25rem;
 			display: flex;
 			justify-content: end;
 			color: white;
 			background-color: $accent;
 			border-radius: 0.5rem 8rem 0.5rem 8rem;
-			margin-top: 15rem;
+			
 			position: relative;
 			overflow-y: visible;
 			min-height: 50vh;
@@ -191,13 +195,14 @@
 				left: 25%;
 				top: 50%;
 				transform: translate(-50%, -55%);
-				height: 120%;
+				// height: 120%;
+				width: 70%;
 			}
 
 			article {
 				position: relative;
 				width: 35%;
-				padding: 8% 15% 8% 0;
+				padding: 8% 5% 8% 0;
 				z-index: 1;
 
 				h1 {
@@ -212,7 +217,8 @@
 			}
 		}
 
-		#reason {
+		#desktop-web-dev {
+			margin-top: 25rem;
 			padding-bottom: 10%;
 			.paragraph {
 				article {
@@ -235,16 +241,21 @@
 				flex-direction: column;
 				display: flex;
 				h1 {
-					margin-block-start: 0;
-					font-size: 14vw;
-					line-height: 1.2;
+					height: 50vh;
+					font-size: 80px;
+					line-height: 1;
 					max-width: 100%;
 				}
 				#eval {
 					margin-left: 0rem;
-					margin-top: 10px;
 					h2 {
 						font-size: 6vw;
+						line-height: 1;
+						padding-bottom: 1rem;
+					}
+					em {
+						font-size: 16px;
+						line-height: 1;
 					}
 					.row {
 						flex-direction: row;
@@ -274,64 +285,78 @@
 					}
 				}
 			}
-			#design {
-				text-align: center;
+			#whatwedo {
+				margin-top: 10rem;
+				.paragraph {
+					text-align: center;
+					display: flex;
+					flex-direction: column-reverse;
 
-				h1 {
-					top: -10%;
-				}
-			}
+					article {
+						padding-top: 50px;
+						padding-left: 10px;
+						padding-right: 10px;
 
-			.paragraph {
-				display: flex;
-				flex-direction: column-reverse;
+						p {
+							text-align: justify;
+							padding-top: 30px;
+						}
+					}
 
-				article {
-					padding: 2rem;
-				}
-
-				.backgroundImg {
-					justify-content: center;
-					img {
-						width: 85%;
-						transform: none;
+					.backgroundImg {
+						justify-content: center;
+						img {
+							width: 85%;
+							transform: none;
+						}
 					}
 				}
 			}
 
-			#art {
-				margin-top: 20rem;
+			#mobile-dev {
+				margin-top: 15rem;
 				justify-content: center;
 				display: flex;
 				#phone {
 					top: 0;
-					height: unset;
 					left: 50%;
 					width: 75% !important;
 				}
 
 				article {
-					margin-top: 10rem;
-					margin-bottom: 10rem;
+					margin-top: 7rem;
+					margin-bottom: 25px;
+					// margin: 25px;
+					width: 90%;
 					text-align: center;
-					width: calc(100% - 3rem);
-					padding: 0;
+
+					// padding: 0;
 				}
 			}
 
-			#reason {
+			#desktop-web-dev {
+				margin-top: 10rem;
+				text-align: center;
 				.paragraph {
+					display: flex;
 					flex-direction: column-reverse;
-					text-align: center;
 
 					article {
-						padding: 2rem;
+						padding-top: 50px;
+						padding-left: 10px;
+						padding-right: 10px;
+
+						p {
+							text-align: justify;
+							padding-top: 30px;
+						}
 					}
 				}
 
 				.backgroundImg2 {
 					display: flex;
 					justify-content: center;
+
 					img {
 						width: 85%;
 						transform: none;
