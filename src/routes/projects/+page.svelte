@@ -1,8 +1,12 @@
 <script>
     import ProjectsGrid from '$lib/projects/ProjectsGrid.svelte';
+    import FilterChips from '$lib/projects/FilterChips.svelte';
     import { onMount } from 'svelte';
 
     let latestProjects = [];
+    let filteredProjects = [];
+    let filters = [];
+    let selectedFilters = [];
 
     const githubUrl = 'https://raw.githubusercontent.com/lasheendev/lasheen.dev/refs/heads/master/json/projects.json';
 
@@ -14,20 +18,34 @@
         return response.json();
     }
 
+    $: {
+        filteredProjects = selectedFilters.length > 0
+            ? latestProjects.filter(project => 
+                project.tags?.some(tech => 
+                    selectedFilters.includes(tech)
+                )
+            )
+            : latestProjects;
+    }
+
     onMount(async () => {
         try {
             const data = await fetchProjects();
             latestProjects = Object.values(data);
+            // Extract unique technologies for filters
+            filters = [...new Set(
+                latestProjects.flatMap(project => project.tags || [])
+            )];
         } catch (error) {
             console.error('Error fetching projects:', error);
         }
     });
 </script>
 
-
 <section class="latest">
-	<h2>Projects</h2>
-	<ProjectsGrid projects={latestProjects} />
+    <h2>Projects</h2>
+    <FilterChips {filters} bind:selectedFilters />
+    <ProjectsGrid projects={filteredProjects} />
 </section>
 
 <style lang="scss">
