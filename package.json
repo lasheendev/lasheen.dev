@@ -5,23 +5,19 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^3.1.6",
 		"@sveltejs/adapter-auto": "^3.2.0",
 		"@sveltejs/kit": "^2.5.7",
 		"@sveltejs/vite-plugin-svelte": "^3.1.0",
-		"eslint": "^9.1.1",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.38.0",
-		"prettier": "^3.2.5",
-		"prettier-plugin-svelte": "^3.2.3",
+		"@tsconfig/svelte": "^5.0.4",
 		"sass": "^1.75.0",
 		"svelte": "^4.2.15",
+		"svelte-check": "^4.0.6",
 		"svelte-preprocess": "^5.1.4",
+		"typescript": "^5.6.3",
 		"vite": "^5.2.10"
 	},
 	"type": "module",
