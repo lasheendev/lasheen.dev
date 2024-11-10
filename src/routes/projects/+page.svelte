@@ -25,7 +25,9 @@
     filteredProjects =
       selectedFilters.length > 0
         ? latestProjects.filter((project: Project) =>
-            project.tags.some((tech: string) => selectedFilters.includes(tech)),
+            selectedFilters.every((filter: string) => 
+              project.tags.includes(filter)
+            ),
           )
         : latestProjects;
   }
