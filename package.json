@@ -6,7 +6,8 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-check --tsconfig ./tsconfig.json"
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"format": "prettier --write ."
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^3.1.6",
@@ -14,6 +15,8 @@
 		"@sveltejs/kit": "^2.5.7",
 		"@sveltejs/vite-plugin-svelte": "^3.1.0",
 		"@tsconfig/svelte": "^5.0.4",
+		"prettier": "^3.3.3",
+		"prettier-plugin-svelte": "^3.2.7",
 		"sass": "^1.75.0",
 		"svelte": "^4.2.15",
 		"svelte-check": "^4.0.6",
