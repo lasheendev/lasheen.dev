@@ -3,10 +3,35 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.orange"
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/lasheendev/lasheen.dev"
+        },
+        {
+          "color": "#0f47b741",
+          "icon": "mdi:web",
+          "id": "Website",
+          "url": "https://lasheen.dev/"
+        }
+      ],
+      "date": "2023-06-26",
+      "id": "ussd",
+      "shortDescription": "Personal Portfolio",
+      "tags": [
+        "Personal",
+        "Svelte",
+        "Web"
+      ],
+      "title": "lasheen.dev"
+    },
+    {
+      "access": [
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/ussd"
         },
         {
           "color": "black",
@@ -15,18 +40,17 @@
           "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.etisalat"
         },
         {
-          "color": "#23863778",
-          "icon": "mdi:github",
-          "id": "Github",
-          "url": "https://github.com/YoussefLasheen/ussd"
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.orange"
         }
       ],
-      "credits": "Youssef Lasheen",
       "date": "2023-07-16",
       "id": "ussd",
       "shortDescription": "Phone USSD Codes",
       "tags": [
-        "flutter",
+        "Flutter",
         "Mobile",
         "Personal"
       ],
@@ -36,23 +60,23 @@
       "access": [
         {
           "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=com.simplynikah.app"
-        },
-        {
-          "color": "black",
           "icon": "simple-icons:appstore",
           "id": "Appstore",
           "url": "https://apps.apple.com/us/app/simply-nikah/id6471347083"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=com.simplynikah.app"
         }
       ],
-      "credits": "Youssef Lasheen",
       "date": "2024-05-14",
       "id": "simplynikah",
       "shortDescription": "Muslim Matrimonial app",
       "tags": [
-        "flutter",
+        "Flutter",
+        "Full-Time",
         "Mobile"
       ],
       "title": "Simply Nikah"
@@ -60,24 +84,23 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.cashier"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/cashier"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.cashier"
         }
       ],
-      "credits": "Youssef Lasheen",
       "date": "2023-07-30",
       "id": "cashier",
       "shortDescription": "Cashier app",
       "tags": [
-        "flutter",
+        "Flutter",
         "Mobile"
       ],
       "title": "Cashier"
@@ -85,24 +108,23 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.surelight.express"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/surelight"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.surelight.express"
         }
       ],
-      "credits": "Youssef Lasheen",
       "date": "2023-09-12",
       "id": "surelight-express",
       "shortDescription": "DMX Control app",
       "tags": [
-        "flutter",
+        "Flutter",
         "Mobile",
         "Personal"
       ],
@@ -124,51 +146,50 @@
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688837472/lasheen.dev/projects/2go/dij2tbwx7gjn32hzq6f1.png",
-      "credits": "Youssef Lasheen",
       "date": "2022-07-15",
       "id": "2go",
       "shortDescription": "Local Taxi app",
       "tags": [
-        "flutter",
-        "Mobile",
-        "Personal"
+        "Flutter",
+        "Full-Time",
+        "Mobile"
       ],
       "title": "2GO Rider/Driver"
     },
     {
       "access": [],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835638/lasheen.dev/projects/wtc/uymasiyarqtdbsokb4sz.png",
-      "credits": "Youssef Lasheen",
       "date": "2023-04-22",
       "id": "wtc",
       "shortDescription": "PDF Helper app",
       "tags": [
-        "flutter",
-        "Mobile"
+        "Freelance",
+        "Mobile",
+        "flutter"
       ],
       "title": "Winning The Claim"
     },
     {
       "access": [
         {
-          "color": "#0f47b741",
-          "icon": "mdi:web",
-          "id": "Website",
-          "url": "https://myintimate.app/"
-        },
-        {
           "color": "black",
           "icon": "ion:logo-google-playstore",
           "id": "Playstore",
           "url": "https://play.google.com/store/apps/details?id=com.growinpainsllc.intimate&pli=1"
+        },
+        {
+          "color": "#0f47b741",
+          "icon": "mdi:web",
+          "id": "Website",
+          "url": "https://myintimate.app/"
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695798403/lasheen.dev/projects/intimate/g2dkpkwojg22bq3azuid.png",
-      "credits": "Youssef Lasheen",
       "date": "2023-07-15",
       "id": "intimate",
       "shortDescription": "AI dating simulator",
       "tags": [
+        "Flutter",
         "Mobile",
         "UI/UX"
       ],
@@ -177,37 +198,37 @@
     {
       "access": [
         {
-          "color": "#fa624063",
-          "icon": "simple-icons:snapcraft",
-          "id": "Snapcraft",
-          "url": "https://snapcraft.io/harmony"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/keyboard"
+        },
+        {
+          "color": "#fa624063",
+          "icon": "simple-icons:snapcraft",
+          "id": "Snapcraft",
+          "url": "https://snapcraft.io/harmony"
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695797816/lasheen.dev/projects/harmony/vhlttlwj5qni33y8iafl.png",
-      "credits": "Youssef Lasheen",
       "date": "2023-02-11",
       "id": "harmony",
       "shortDescription": "Keyboard simulator",
       "tags": [
         "Desktop",
-        "UI/UX",
-        "Personal"
+        "Flutter",
+        "Personal",
+        "UI/UX"
       ],
       "title": "Harmony"
     },
     {
       "access": [
         {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.crowdsolve"
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/CrowdSolve"
         },
         {
           "color": "#0f47b741",
@@ -216,19 +237,18 @@
           "url": "https://crowdsolve.lasheen.dev/#/"
         },
         {
-          "color": "#23863778",
-          "icon": "mdi:github",
-          "id": "Github",
-          "url": "https://github.com/CrowdSolve"
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.crowdsolve"
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688838106/lasheen.dev/projects/cs/mdxzumf1rv8g3srgekxw.png",
-      "credits": "Youssef Lasheen, Youssef Adel, Mohammed Bargush",
       "date": "2022-04-27",
       "id": "crowdsolve",
       "shortDescription": "Information sharing app",
       "tags": [
-        "flutter",
+        "Flutter",
         "Mobile",
         "Personal"
       ],
@@ -237,52 +257,50 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "simple-icons:dart",
-          "id": "pub.dev",
-          "url": "https://pub.dev/packages/flurry_navigation"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/flurry_navigation"
+        },
+        {
+          "color": "black",
+          "icon": "simple-icons:dart",
+          "id": "pub.dev",
+          "url": "https://pub.dev/packages/flurry_navigation"
         }
       ],
-      "credits": "Youssef Lasheen",
       "date": "2019-04-28",
       "id": "flurry",
       "shortDescription": "A flutter package",
       "tags": [
-        "flutter",
-        "Plugin",
-        "Personal"
+        "Flutter",
+        "Personal",
+        "Plugin"
       ],
       "title": "flurry_navigation"
     },
     {
       "access": [
         {
-          "color": "black",
-          "icon": "simple-icons:dart",
-          "id": "pub.dev",
-          "url": "https://pub.dev/packages/gtk_window"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/gtk_window"
+        },
+        {
+          "color": "black",
+          "icon": "simple-icons:dart",
+          "id": "pub.dev",
+          "url": "https://pub.dev/packages/gtk_window"
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835580/lasheen.dev/projects/gtk_window/j9wmcrdrymtlexabwtfb.png",
-      "credits": "Youssef Lasheen",
       "date": "2022-12-10",
       "id": "gtk_window",
       "shortDescription": "Header for GTK",
       "tags": [
-        "flutter",
         "Desktop",
+        "Flutter",
         "Personal"
       ],
       "title": "gtk_window"
@@ -290,24 +308,23 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.gold"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/gold"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.gold"
         }
       ],
-      "credits": "Youssef Lasheen",
       "date": "2022-11-22",
       "id": "gold",
       "shortDescription": "Track gold prices",
       "tags": [
-        "flutter",
+        "Flutter",
         "Mobile",
         "Personal"
       ],
@@ -316,27 +333,26 @@
     {
       "access": [
         {
-          "color": "#fa624063",
-          "icon": "simple-icons:snapcraft",
-          "id": "Snapcraft",
-          "url": "https://snapcraft.io/qr-scanner"
-        },
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/qr"
+        },
+        {
+          "color": "#fa624063",
+          "icon": "simple-icons:snapcraft",
+          "id": "Snapcraft",
+          "url": "https://snapcraft.io/qr-scanner"
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835644/lasheen.dev/projects/qr/gejse3gvn3hk18yvhrrt.png",
-      "credits": "Youssef Lasheen",
       "date": "2022-12-05",
       "id": "qr",
       "shortDescription": "QRcode Scanner and generator",
       "tags": [
-        "Mobile",
         "Desktop",
-        "flutter",
+        "Flutter",
+        "Mobile",
         "Personal"
       ],
       "title": "QR"
@@ -357,12 +373,11 @@
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835512/lasheen.dev/projects/doze/r0gevc1ym5t8nfwco0ty.png",
-      "credits": "Youssef Lasheen",
       "date": "2020-02-15",
       "id": "doze",
       "shortDescription": "A SMART Napping App",
       "tags": [
-        "flutter",
+        "Flutter",
         "Mobile",
         "Personal"
       ],
