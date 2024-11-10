@@ -5,7 +5,7 @@ export interface Project {
   longDescription: string;
   role: string;
   client: string;
-  date: string;
+  date: Date;
   tags: string[];
   backgroundImageSource?: string;
   order: number;

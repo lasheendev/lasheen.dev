@@ -33,7 +33,8 @@
   onMount(async () => {
     try {
       const data: ProjectResponse = await fetchProjects();
-      latestProjects = Object.values(data.projects);
+      latestProjects = Object.values(data.projects)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
       filters = [...new Set(latestProjects.flatMap((project) => project.tags))];
     } catch (error: unknown) {
       console.error(
