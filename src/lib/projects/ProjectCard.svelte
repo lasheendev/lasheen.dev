@@ -3,9 +3,7 @@
   import Icon from "@iconify/svelte";
   import type { Project } from "../../types/project";
   export let project: Project;
-  if (project.tags) {
-    project.tags = project.tags.slice(0, 2);
-  }
+
   //check if the project has a background image and if not use a placeholder
   if (!project.backgroundImageSource) {
     project.backgroundImageSource = `https://placehold.jp/48/000000/ffffff/400x300.png?text=${project.title}`;
