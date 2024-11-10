@@ -8,7 +8,7 @@
   }
   //check if the project has a background image and if not use a placeholder
   if (!project.backgroundImageSource) {
-    project.backgroundImageSource = `https://placehold.co/600x400/white/black?text=${project.title}`;
+    project.backgroundImageSource = `https://placehold.jp/48/000000/ffffff/400x300.png?text=${project.title}`;
   }
 </script>
 
