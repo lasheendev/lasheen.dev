@@ -19,7 +19,6 @@
 			use:lazyImage={{ threshold: 0.5 }}
 		/>
 	</div>
-	<div class="card-content">
 		<div class="card-info">
 			<span class="card-title">{project.title}</span>
 			<p class="card-text">
@@ -42,14 +41,12 @@
 					</a>
 				{/each}
 			</div>
-		</div>
 	</div>
 </div>
 
 <style lang="scss">
 	.card {
-		position: relative;
-		height: calc(100% + 2rem);
+		height: 100%;
 		max-width: 630px;
 		background: $clr-card;
 		border-radius: 1.5rem;
@@ -71,11 +68,10 @@
 			}
 		}
 
-		.card-content {
-			padding: 1rem 0.5rem 0.5rem 0.5rem;
-		}
+
 
 		.card-info {
+			padding: 1rem 0.5rem 0.5rem 0.5rem;
 			a {
 				text-decoration: none;
 				transition: 0.2s;
@@ -103,7 +99,6 @@
 			}
 
 			.tags {
-				position: absolute;
 				bottom: 1rem;
 				display: flex;
 				flex-wrap: wrap;
@@ -134,13 +129,10 @@
 				}
 			}
 			.actions {
-				position: absolute;
-				right: 1rem;
-				bottom: 1rem;
-
-				overflow: hidden;
+				margin-top: 0.5rem;
 				gap: 0.5rem;
 				display: flex;
+				justify-content: flex-end;
 
 				.btn {
 					overflow: hidden;
