@@ -19,8 +19,7 @@
 <style lang="scss">
   .projects-grid {
     display: grid;
-    grid-auto-columns: 100px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     grid-gap: 3rem 1rem;
     @media screen and (max-width: $tablet) {
       margin-inline: -1rem;
