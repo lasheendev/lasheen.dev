@@ -7,7 +7,7 @@ export interface Project {
   client: string;
   date: string;
   tags: string[];
-  backgroundImageSource: string;
+  backgroundImageSource?: string;
   order: number;
   credits: string;
   access: ProjectAccess[];
