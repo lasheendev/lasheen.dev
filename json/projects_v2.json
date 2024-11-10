@@ -13,6 +13,12 @@
           "icon": "ion:logo-google-playstore",
           "id": "Playstore",
           "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.etisalat"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/ussd"
         }
       ],
       "client": "Personal",
@@ -63,6 +69,12 @@
           "icon": "ion:logo-google-playstore",
           "id": "Playstore",
           "url": "https://play.google.com/store/apps/details?id=dev.lasheen.cashier"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/cashier"
         }
       ],
       "client": "Personal",
@@ -85,6 +97,12 @@
           "icon": "ion:logo-google-playstore",
           "id": "Playstore",
           "url": "https://play.google.com/store/apps/details?id=dev.lasheen.surelight.express"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/surelight"
         }
       ],
       "client": "Personal",
@@ -273,6 +291,12 @@
           "icon": "simple-icons:dart",
           "id": "pub.dev",
           "url": "https://pub.dev/packages/gtk_window"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/gtk_window"
         }
       ],
       "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835580/lasheen.dev/projects/gtk_window/j9wmcrdrymtlexabwtfb.png",
