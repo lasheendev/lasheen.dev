@@ -27,7 +27,7 @@
       "id": "ussd",
       "longDescription": "",
       "role": "App developer",
-      "shortDescription": "Phone USSD Codes for Orange, Vodafone, WE, and Etisalat",
+      "shortDescription": "Phone USSD Codes",
       "tags": [
         "flutter",
         "Mobile"
