@@ -5,6 +5,106 @@
         {
           "color": "black",
           "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.orange"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.etisalat"
+        }
+      ],
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "2023-07-16",
+      "id": "simplynikah",
+      "longDescription": "",
+      "role": "App developer",
+      "shortDescription": "Phone USSD Codes for Orange, Vodafone, WE, and Etisalat",
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
+      "title": "USSD Codes"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=com.simplynikah.app"
+        },
+        {
+          "color": "black",
+          "icon": "simple-icons:appstore",
+          "id": "Appstore",
+          "url": "https://apps.apple.com/us/app/simply-nikah/id6471347083"
+        }
+      ],
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "2024-05-14",
+      "id": "simplynikah",
+      "longDescription": "",
+      "role": "App developer",
+      "shortDescription": "Muslim Matrimonial app",
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
+      "title": "Simply Nikah"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.cashier"
+        }
+      ],
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "2023-07-30",
+      "id": "cashier",
+      "longDescription": "",
+      "role": "App developer and designer",
+      "shortDescription": "Cashier app",
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
+      "title": "Cashier"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.surelight.express"
+        }
+      ],
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "2023-09-12",
+      "id": "surelight-express",
+      "longDescription": "",
+      "role": "App developer and designer",
+      "shortDescription": "DMX Control app",
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
+      "title": "Surelight Express"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
           "id": "Playstore-Driver",
           "url": "https://play.google.com/store/apps/details?id=com.togo.driverApp"
         },
@@ -23,7 +123,10 @@
       "longDescription": "An app to track gold prices in different currencies",
       "role": "App developer and designer",
       "shortDescription": "Local Taxi app",
-      "tags": ["flutter", "Mobile"],
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
       "title": "2GO Rider/Driver"
     },
     {
@@ -36,7 +139,10 @@
       "longDescription": "An application that lets users fill a predefined pdf easily",
       "role": "App developer and designer",
       "shortDescription": "PDF Helper app",
-      "tags": ["flutter", "Mobile"],
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
       "title": "Winning The Claim"
     },
     {
@@ -62,7 +168,10 @@
       "longDescription": "",
       "role": "Flutter Developer",
       "shortDescription": "AI dating simulator",
-      "tags": ["Mobile", "UI/UX"],
+      "tags": [
+        "Mobile",
+        "UI/UX"
+      ],
       "title": "Intimate - AI Girlfriend"
     },
     {
@@ -88,7 +197,10 @@
       "longDescription": "A beautiful musical keyboard (piano) app made with flutter. Built with love by lasheen.dev",
       "role": "Sole Developer and Designer",
       "shortDescription": "Keyboard simulator",
-      "tags": ["Desktop", "UI/UX"],
+      "tags": [
+        "Desktop",
+        "UI/UX"
+      ],
       "title": "Harmony"
     },
     {
@@ -120,7 +232,10 @@
       "longDescription": "Crowd Solve app allow users to share their questions and other students can help them by answering them.",
       "role": "App developer and designer ",
       "shortDescription": "Information sharing app",
-      "tags": ["flutter", "Mobile"],
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
       "title": "Crowd Solve"
     },
     {
@@ -145,7 +260,10 @@
       "longDescription": "Designed and developed by Youssef Lasheen  It is available as a dart package from pub.dev/packages/flurry_navigation A Smooth and Animated navigation package for flutter that doesn’t interfere with the Screen with adjustable colors, shapes, and navigation logic.",
       "role": "Sole Developer",
       "shortDescription": "A flutter package",
-      "tags": ["flutter", "Plugin"],
+      "tags": [
+        "flutter",
+        "Plugin"
+      ],
       "title": "flurry_navigation"
     },
     {
@@ -165,7 +283,10 @@
       "longDescription": "A package that add some missing gtk4 windowing features to flutter. Works for linux but it can also work for MacOS and Windows.",
       "role": "Sole Developer and Designer",
       "shortDescription": "Header for GTK",
-      "tags": ["flutter", "Desktop"],
+      "tags": [
+        "flutter",
+        "Desktop"
+      ],
       "title": "gtk_window"
     },
     {
@@ -190,7 +311,10 @@
       "longDescription": "An app to track gold prices in different currencies",
       "role": "App developer and designer",
       "shortDescription": "Track gold prices",
-      "tags": ["flutter", "Mobile"],
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
       "title": "Gold Prices"
     },
     {
@@ -222,7 +346,10 @@
       "longDescription": "A beautiful material you qr scanner/generator app with absolutely no ads for Android, Linux, and MacOS.",
       "role": "Sole Developer and Designer",
       "shortDescription": "QRcode Scanner and generator",
-      "tags": ["Mobile", "Desktop"],
+      "tags": [
+        "Mobile",
+        "Desktop"
+      ],
       "title": "QR"
     },
     {
@@ -248,7 +375,10 @@
       "longDescription": " A smart napping app made with flutter  Doze is a smart app that uses your cellphone sensors to determine when to wake you up, To exactly get the right amount of sleep you need. It will wake you up right before you are about to enter deep sleep.",
       "role": "Sole Developer and Designer",
       "shortDescription": "A SMART Napping App",
-      "tags": ["flutter", "Mobile"],
+      "tags": [
+        "flutter",
+        "Mobile"
+      ],
       "title": "doze"
     }
   ]
