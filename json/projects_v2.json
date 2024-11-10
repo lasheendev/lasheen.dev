@@ -1,310 +1,277 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "access": [
         {
-            "access": [
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore-Driver",
-                    "url": "https://play.google.com/store/apps/details?id=com.togo.driverApp"
-                },
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore-Rider",
-                    "url": "https://play.google.com/store/apps/details?id=com.inweb.togo"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688837472/lasheen.dev/projects/2go/dij2tbwx7gjn32hzq6f1.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "XXXXXXX",
-            "id": "2go",
-            "longDescription": "An app to track gold prices in different currencies",
-            "role": "App developer and designer",
-            "shortDescription": "Local Taxi app",
-            "tags": [
-                "flutter",
-                "Mobile"
-            ],
-            "title": "2GO Rider/Driver"
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore-Driver",
+          "url": "https://play.google.com/store/apps/details?id=com.togo.driverApp"
         },
         {
-            "access": [],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835638/lasheen.dev/projects/wtc/uymasiyarqtdbsokb4sz.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "April 22, 2023",
-            "id": "wtc",
-            "longDescription": "An application that lets users fill a predefined pdf easily",
-            "role": "App developer and designer",
-            "shortDescription": "PDF Helper app",
-            "tags": [
-                "flutter",
-                "Mobile"
-            ],
-            "title": "Winning The Claim"
-        },
-        {
-            "access": [
-                {
-                    "color": "#0f47b741",
-                    "icon": "mdi:web",
-                    "id": "Website",
-                    "url": "https://menuscan.lasheen.dev/"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835535/lasheen.dev/projects/menuscan/denf3cjajojed6tthaop.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "Feb 25, 2024",
-            "id": "menuscan",
-            "longDescription": "A website for resturants to provide resturants with a qr online menu",
-            "role": "App developer and designer",
-            "shortDescription": "Online QR Menu",
-            "tags": [
-                "Web",
-                "MySQL"
-            ],
-            "title": "MenuScan"
-        },
-        {
-            "access": [
-                {
-                    "color": "#0f47b741",
-                    "icon": "mdi:web",
-                    "id": "Website",
-                    "url": "https://myintimate.app/"
-                },
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore",
-                    "url": "https://play.google.com/store/apps/details?id=com.growinpainsllc.intimate&pli=1"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695798403/lasheen.dev/projects/intimate/g2dkpkwojg22bq3azuid.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "15 July 2023",
-            "id": "intimate",
-            "longDescription": "",
-            "role": "Flutter Developer",
-            "shortDescription": "AI dating simulator",
-            "tags": [
-                "Mobile",
-                "UI/UX"
-            ],
-            "title": "Intimate - AI Girlfriend"
-        },
-        {
-            "access": [
-                {
-                    "color": "#fa624063",
-                    "icon": "simple-icons:snapcraft",
-                    "id": "Snapcraft",
-                    "url": "https://snapcraft.io/harmony"
-                },
-                {
-                    "color": "#23863778",
-                    "icon": "mdi:github",
-                    "id": "Github",
-                    "url": "https://github.com/YoussefLasheen/keyboard"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695797816/lasheen.dev/projects/harmony/vhlttlwj5qni33y8iafl.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "11 February 2023",
-            "id": "harmony",
-            "longDescription": "A beautiful musical keyboard (piano) app made with flutter. Built with love by lasheen.dev",
-            "role": "Sole Developer and Designer",
-            "shortDescription": "Keyboard simulator",
-            "tags": [
-                "Desktop",
-                "UI/UX"
-            ],
-            "title": "Harmony"
-        },
-        {
-            "access": [
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore",
-                    "url": "https://play.google.com/store/apps/details?id=dev.lasheen.crowdsolve"
-                },
-                {
-                    "color": "#0f47b741",
-                    "icon": "mdi:web",
-                    "id": "Website",
-                    "url": "https://crowdsolve.lasheen.dev/#/"
-                },
-                {
-                    "color": "#23863778",
-                    "icon": "mdi:github",
-                    "id": "Github",
-                    "url": "https://github.com/CrowdSolve"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688838106/lasheen.dev/projects/cs/mdxzumf1rv8g3srgekxw.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen, Youssef Adel, Mohammed Bargush",
-            "date": "Apr 27, 2022",
-            "id": "crowdsolve",
-            "longDescription": "Crowd Solve app allow users to share their questions and other students can help them by answering them.",
-            "role": "App developer and designer ",
-            "shortDescription": "Information sharing app",
-            "tags": [
-                "flutter",
-                "Mobile"
-            ],
-            "title": "Crowd Solve"
-        },
-        {
-            "access": [
-                {
-                    "color": "black",
-                    "icon": "simple-icons:dart",
-                    "id": "pub.dev",
-                    "url": "https://pub.dev/packages/flurry_navigation"
-                },
-                {
-                    "color": "#23863778",
-                    "icon": "mdi:github",
-                    "id": "Github",
-                    "url": "https://github.com/YoussefLasheen/flurry_navigation"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688836959/lasheen.dev/projects/flurry/zarh4lwxsxkkj9ys1oo7.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": " Apr 28, 2019",
-            "id": "flurry",
-            "longDescription": "Designed and developed by Youssef Lasheen  It is available as a dart package from pub.dev/packages/flurry_navigation A Smooth and Animated navigation package for flutter that doesn’t interfere with the Screen with adjustable colors, shapes, and navigation logic.",
-            "role": "Sole Developer",
-            "shortDescription": "A flutter package",
-            "tags": [
-                "flutter",
-                "Plugin"
-            ],
-            "title": "flurry_navigation"
-        },
-        {
-            "access": [
-                {
-                    "color": "black",
-                    "icon": "simple-icons:dart",
-                    "id": "pub.dev",
-                    "url": "https://pub.dev/packages/gtk_window"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835580/lasheen.dev/projects/gtk_window/j9wmcrdrymtlexabwtfb.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "Dec 10, 2022",
-            "id": "gtk_window",
-            "longDescription": "A package that add some missing gtk4 windowing features to flutter. Works for linux but it can also work for MacOS and Windows.",
-            "role": "Sole Developer and Designer",
-            "shortDescription": "Header for GTK",
-            "tags": [
-                "flutter",
-                "Desktop"
-            ],
-            "title": "gtk_window"
-        },
-        {
-            "access": [
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore",
-                    "url": "https://play.google.com/store/apps/details?id=dev.lasheen.gold"
-                },
-                {
-                    "color": "#23863778",
-                    "icon": "mdi:github",
-                    "id": "Github",
-                    "url": "https://github.com/YoussefLasheen/gold"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835535/lasheen.dev/projects/gold/mxrpnyf6zvm2vowgix7l.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "Nov 22, 2022",
-            "id": "gold",
-            "longDescription": "An app to track gold prices in different currencies",
-            "role": "App developer and designer",
-            "shortDescription": "Track gold prices",
-            "tags": [
-                "flutter",
-                "Mobile"
-            ],
-            "title": "Gold Prices"
-        },
-        {
-            "access": [
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore",
-                    "url": "https://play.google.com/store/apps/details?id=dev.lasheen.qr.qr"
-                },
-                {
-                    "color": "#fa624063",
-                    "icon": "simple-icons:snapcraft",
-                    "id": "Snapcraft",
-                    "url": "https://snapcraft.io/qr-scanner"
-                },
-                {
-                    "color": "#23863778",
-                    "icon": "mdi:github",
-                    "id": "Github",
-                    "url": "https://github.com/YoussefLasheen/qr"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835644/lasheen.dev/projects/qr/gejse3gvn3hk18yvhrrt.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "Dec 5, 2022",
-            "id": "qr",
-            "longDescription": "A beautiful material you qr scanner/generator app with absolutely no ads for Android, Linux, and MacOS.",
-            "role": "Sole Developer and Designer",
-            "shortDescription": "QRcode Scanner and generator",
-            "tags": [
-                "Mobile",
-                "Desktop"
-            ],
-            "title": "QR"
-        },
-        {
-            "access": [
-                {
-                    "color": "#23863778",
-                    "icon": "mdi:github",
-                    "id": "Github",
-                    "url": "https://github.com/YoussefLasheen/doze"
-                },
-                {
-                    "color": "black",
-                    "icon": "ion:logo-google-playstore",
-                    "id": "Playstore",
-                    "url": "https://play.google.com/store/apps/details?id=dev.lasheen.doze"
-                }
-            ],
-            "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835512/lasheen.dev/projects/doze/r0gevc1ym5t8nfwco0ty.png",
-            "client": "Personal",
-            "credits": "Youssef Lasheen",
-            "date": "Feb 15, 2020",
-            "id": "doze",
-            "longDescription": " A smart napping app made with flutter  Doze is a smart app that uses your cellphone sensors to determine when to wake you up, To exactly get the right amount of sleep you need. It will wake you up right before you are about to enter deep sleep.",
-            "role": "Sole Developer and Designer",
-            "shortDescription": "A SMART Napping App",
-            "tags": [
-                "flutter",
-                "Mobile"
-            ],
-            "title": "doze"
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore-Rider",
+          "url": "https://play.google.com/store/apps/details?id=com.inweb.togo"
         }
-    ]
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688837472/lasheen.dev/projects/2go/dij2tbwx7gjn32hzq6f1.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "XXXXXXX",
+      "id": "2go",
+      "longDescription": "An app to track gold prices in different currencies",
+      "role": "App developer and designer",
+      "shortDescription": "Local Taxi app",
+      "tags": ["flutter", "Mobile"],
+      "title": "2GO Rider/Driver"
+    },
+    {
+      "access": [],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835638/lasheen.dev/projects/wtc/uymasiyarqtdbsokb4sz.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "April 22, 2023",
+      "id": "wtc",
+      "longDescription": "An application that lets users fill a predefined pdf easily",
+      "role": "App developer and designer",
+      "shortDescription": "PDF Helper app",
+      "tags": ["flutter", "Mobile"],
+      "title": "Winning The Claim"
+    },
+    {
+      "access": [
+        {
+          "color": "#0f47b741",
+          "icon": "mdi:web",
+          "id": "Website",
+          "url": "https://menuscan.lasheen.dev/"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835535/lasheen.dev/projects/menuscan/denf3cjajojed6tthaop.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "Feb 25, 2024",
+      "id": "menuscan",
+      "longDescription": "A website for resturants to provide resturants with a qr online menu",
+      "role": "App developer and designer",
+      "shortDescription": "Online QR Menu",
+      "tags": ["Web", "MySQL"],
+      "title": "MenuScan"
+    },
+    {
+      "access": [
+        {
+          "color": "#0f47b741",
+          "icon": "mdi:web",
+          "id": "Website",
+          "url": "https://myintimate.app/"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=com.growinpainsllc.intimate&pli=1"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695798403/lasheen.dev/projects/intimate/g2dkpkwojg22bq3azuid.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "15 July 2023",
+      "id": "intimate",
+      "longDescription": "",
+      "role": "Flutter Developer",
+      "shortDescription": "AI dating simulator",
+      "tags": ["Mobile", "UI/UX"],
+      "title": "Intimate - AI Girlfriend"
+    },
+    {
+      "access": [
+        {
+          "color": "#fa624063",
+          "icon": "simple-icons:snapcraft",
+          "id": "Snapcraft",
+          "url": "https://snapcraft.io/harmony"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/keyboard"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695797816/lasheen.dev/projects/harmony/vhlttlwj5qni33y8iafl.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "11 February 2023",
+      "id": "harmony",
+      "longDescription": "A beautiful musical keyboard (piano) app made with flutter. Built with love by lasheen.dev",
+      "role": "Sole Developer and Designer",
+      "shortDescription": "Keyboard simulator",
+      "tags": ["Desktop", "UI/UX"],
+      "title": "Harmony"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.crowdsolve"
+        },
+        {
+          "color": "#0f47b741",
+          "icon": "mdi:web",
+          "id": "Website",
+          "url": "https://crowdsolve.lasheen.dev/#/"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/CrowdSolve"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688838106/lasheen.dev/projects/cs/mdxzumf1rv8g3srgekxw.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen, Youssef Adel, Mohammed Bargush",
+      "date": "Apr 27, 2022",
+      "id": "crowdsolve",
+      "longDescription": "Crowd Solve app allow users to share their questions and other students can help them by answering them.",
+      "role": "App developer and designer ",
+      "shortDescription": "Information sharing app",
+      "tags": ["flutter", "Mobile"],
+      "title": "Crowd Solve"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "simple-icons:dart",
+          "id": "pub.dev",
+          "url": "https://pub.dev/packages/flurry_navigation"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/flurry_navigation"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688836959/lasheen.dev/projects/flurry/zarh4lwxsxkkj9ys1oo7.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": " Apr 28, 2019",
+      "id": "flurry",
+      "longDescription": "Designed and developed by Youssef Lasheen  It is available as a dart package from pub.dev/packages/flurry_navigation A Smooth and Animated navigation package for flutter that doesn’t interfere with the Screen with adjustable colors, shapes, and navigation logic.",
+      "role": "Sole Developer",
+      "shortDescription": "A flutter package",
+      "tags": ["flutter", "Plugin"],
+      "title": "flurry_navigation"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "simple-icons:dart",
+          "id": "pub.dev",
+          "url": "https://pub.dev/packages/gtk_window"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835580/lasheen.dev/projects/gtk_window/j9wmcrdrymtlexabwtfb.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "Dec 10, 2022",
+      "id": "gtk_window",
+      "longDescription": "A package that add some missing gtk4 windowing features to flutter. Works for linux but it can also work for MacOS and Windows.",
+      "role": "Sole Developer and Designer",
+      "shortDescription": "Header for GTK",
+      "tags": ["flutter", "Desktop"],
+      "title": "gtk_window"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.gold"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/gold"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835535/lasheen.dev/projects/gold/mxrpnyf6zvm2vowgix7l.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "Nov 22, 2022",
+      "id": "gold",
+      "longDescription": "An app to track gold prices in different currencies",
+      "role": "App developer and designer",
+      "shortDescription": "Track gold prices",
+      "tags": ["flutter", "Mobile"],
+      "title": "Gold Prices"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.qr.qr"
+        },
+        {
+          "color": "#fa624063",
+          "icon": "simple-icons:snapcraft",
+          "id": "Snapcraft",
+          "url": "https://snapcraft.io/qr-scanner"
+        },
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/qr"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835644/lasheen.dev/projects/qr/gejse3gvn3hk18yvhrrt.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "Dec 5, 2022",
+      "id": "qr",
+      "longDescription": "A beautiful material you qr scanner/generator app with absolutely no ads for Android, Linux, and MacOS.",
+      "role": "Sole Developer and Designer",
+      "shortDescription": "QRcode Scanner and generator",
+      "tags": ["Mobile", "Desktop"],
+      "title": "QR"
+    },
+    {
+      "access": [
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
+          "url": "https://github.com/YoussefLasheen/doze"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.doze"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835512/lasheen.dev/projects/doze/r0gevc1ym5t8nfwco0ty.png",
+      "client": "Personal",
+      "credits": "Youssef Lasheen",
+      "date": "Feb 15, 2020",
+      "id": "doze",
+      "longDescription": " A smart napping app made with flutter  Doze is a smart app that uses your cellphone sensors to determine when to wake you up, To exactly get the right amount of sleep you need. It will wake you up right before you are about to enter deep sleep.",
+      "role": "Sole Developer and Designer",
+      "shortDescription": "A SMART Napping App",
+      "tags": ["flutter", "Mobile"],
+      "title": "doze"
+    }
+  ]
 }

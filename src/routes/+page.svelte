@@ -1,368 +1,379 @@
 <script>
-	import editor from '../assets/images/illustration-editor.svg';
-	import laptop from '../assets/images/illustration-laptop.svg';
+  import editor from "../assets/images/illustration-editor.svg";
+  import laptop from "../assets/images/illustration-laptop.svg";
 
-	import phone from '../assets/images/illustration-phones.svg';
+  import phone from "../assets/images/illustration-phones.svg";
 </script>
 
 <svelte:head>
-	<title>lasheen.dev | Portfolio</title>
-	<meta name="title" content="lasheen.dev | portfolio" />
-	<meta
-		name="description"
-		content="Welcome to lasheen.dev, your premier destination for cutting-edge software development solutions. As an up and coming software development agency, we are dedicated to providing our clients with innovative and customized software solutions that empower their businesses in the digital age. With a team of highly skilled and experienced software engineers, designers, and project managers, we offer a wide range of services tailored to meet the unique needs of each client. From concept to deployment, we are committed to delivering top-notch software products that drive efficiency, enhance user experiences, and maximize business potential. Contact us today to discuss your software development needs and let us help you unlock the true potential of your business through innovative technology solutions."
-	/>
+  <title>lasheen.dev | Portfolio</title>
+  <meta name="title" content="lasheen.dev | portfolio" />
+  <meta
+    name="description"
+    content="Welcome to lasheen.dev, your premier destination for cutting-edge software development solutions. As an up and coming software development agency, we are dedicated to providing our clients with innovative and customized software solutions that empower their businesses in the digital age. With a team of highly skilled and experienced software engineers, designers, and project managers, we offer a wide range of services tailored to meet the unique needs of each client. From concept to deployment, we are committed to delivering top-notch software products that drive efficiency, enhance user experiences, and maximize business potential. Contact us today to discuss your software development needs and let us help you unlock the true potential of your business through innovative technology solutions."
+  />
 </svelte:head>
 
 <main>
-	<section id="intro">
-		<h1>Turn your amazing ideas into reality</h1>
-		<div id="eval">
-			<h2>Book an evaluation now for free. And get a price quote the same day guarnteed</h2>
-			<em>Special prices for NPOs</em>
-			<div class="row">
-				<a href="/contact" class="btn primary">CONTACT US</a>
-				<a href="/projects" class="btn secondary">VIEW WORK</a>
-			</div>
-		</div>
-	</section>
-	<section id="whatwedo">
-		<div class="paragraph">
-			<article>
-				<div>
-					<h2>Cutting-Edge Programming Solutions for Streamlined Development</h2>
-					<p>
-						At lasheen.dev, we specialize in providing cutting-edge software development services to
-						help businesses transform their ideas into reality. Our expert team of programmers is
-						well-versed in the latest programming languages and technologies, ensuring that we
-						deliver high-quality solutions tailored to meet your specific needs. Whether you require
-						a web application, mobile app, or desktop software, we have the expertise to architect
-						and design efficient and user-friendly solutions.
-					</p>
-				</div>
-			</article>
-			<div class="backgroundImg">
-				<img src={editor} alt="Editor" />
-				<!-- <img src={editorMobile} alt="Editor" /> -->
-			</div>
-		</div>
-	</section>
-	<section id="mobile-dev">
-		<img id="phone" src={phone} alt="Phone" />
+  <section id="intro">
+    <h1>Turn your amazing ideas into reality</h1>
+    <div id="eval">
+      <h2>
+        Book an evaluation now for free. And get a price quote the same day
+        guarnteed
+      </h2>
+      <em>Special prices for NPOs</em>
+      <div class="row">
+        <a href="/contact" class="btn primary">CONTACT US</a>
+        <a href="/projects" class="btn secondary">VIEW WORK</a>
+      </div>
+    </div>
+  </section>
+  <section id="whatwedo">
+    <div class="paragraph">
+      <article>
+        <div>
+          <h2>
+            Cutting-Edge Programming Solutions for Streamlined Development
+          </h2>
+          <p>
+            At lasheen.dev, we specialize in providing cutting-edge software
+            development services to help businesses transform their ideas into
+            reality. Our expert team of programmers is well-versed in the latest
+            programming languages and technologies, ensuring that we deliver
+            high-quality solutions tailored to meet your specific needs. Whether
+            you require a web application, mobile app, or desktop software, we
+            have the expertise to architect and design efficient and
+            user-friendly solutions.
+          </p>
+        </div>
+      </article>
+      <div class="backgroundImg">
+        <img src={editor} alt="Editor" />
+        <!-- <img src={editorMobile} alt="Editor" /> -->
+      </div>
+    </div>
+  </section>
+  <section id="mobile-dev">
+    <img id="phone" src={phone} alt="Phone" />
 
-		<article>
-			<h1>Mobile App Development</h1>
-			<p>
-				With our expertise in mobile app development, we empower your business to leverage the full
-				potential of mobile technology. Whether you need a consumer-facing app, an enterprise
-				solution, or a gaming application, we can bring your ideas to life. From concept to
-				deployment, we handle every aspect of the development process, ensuring that your app meets
-				the highest standards of performance, usability, and security. Partner with us to deliver a
-				mobile experience that keeps your customers coming back for more.
-			</p>
-		</article>
-	</section>
-	<section id="desktop-web-dev">
-		<div class="paragraph">
-			<div class="backgroundImg2">
-				<img src={laptop} alt="Laptop" />
-				<!-- <img src={laptopMobile} alt="Laptop" /> -->
-			</div>
-			<article>
-				<div>
-					<h2>Desktop and Web Development</h2>
-					<p>
-						In addition to mobile app development, we offer top-notch desktop and web development
-						services. With our expertise in multiple programming languages, frameworks, and
-						platforms, we have the versatility to build powerful solutions for any platform. Whether
-						you need a desktop software application, a responsive website, or a complex web portal,
-						we have the skills and experience to deliver outstanding results.
-					</p>
-				</div>
-			</article>
-		</div>
-	</section>
+    <article>
+      <h1>Mobile App Development</h1>
+      <p>
+        With our expertise in mobile app development, we empower your business
+        to leverage the full potential of mobile technology. Whether you need a
+        consumer-facing app, an enterprise solution, or a gaming application, we
+        can bring your ideas to life. From concept to deployment, we handle
+        every aspect of the development process, ensuring that your app meets
+        the highest standards of performance, usability, and security. Partner
+        with us to deliver a mobile experience that keeps your customers coming
+        back for more.
+      </p>
+    </article>
+  </section>
+  <section id="desktop-web-dev">
+    <div class="paragraph">
+      <div class="backgroundImg2">
+        <img src={laptop} alt="Laptop" />
+        <!-- <img src={laptopMobile} alt="Laptop" /> -->
+      </div>
+      <article>
+        <div>
+          <h2>Desktop and Web Development</h2>
+          <p>
+            In addition to mobile app development, we offer top-notch desktop
+            and web development services. With our expertise in multiple
+            programming languages, frameworks, and platforms, we have the
+            versatility to build powerful solutions for any platform. Whether
+            you need a desktop software application, a responsive website, or a
+            complex web portal, we have the skills and experience to deliver
+            outstanding results.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
 </main>
 
 <style lang="scss">
-	main {
-		margin-left: 7.5rem;
-		margin-right: 2.5rem;
+  main {
+    margin-left: 7.5rem;
+    margin-right: 2.5rem;
 
-		.paragraph {
-			margin-block-start: 8rem;
-			display: grid;
-			grid-template-columns: 50% 50%;
+    .paragraph {
+      margin-block-start: 8rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
 
-			article {
-				padding: 0% 0 15% 0%;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
+      article {
+        padding: 0% 0 15% 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-				h2 {
-					color: var(--very-dark-blue);
-					font-size: clamp(1.5rem, 2vw, 2rem);
-				}
+        h2 {
+          color: var(--very-dark-blue);
+          font-size: clamp(1.5rem, 2vw, 2rem);
+        }
 
-				p {
-					color: var(--very-dark-grayish-blue);
-					line-height: 2rem;
-				}
-			}
-		}
+        p {
+          color: var(--very-dark-grayish-blue);
+          line-height: 2rem;
+        }
+      }
+    }
 
-		.backgroundImg {
-			img {
-				width: 60%;
-				transform: translate(30%);
-			}
-		}
+    .backgroundImg {
+      img {
+        width: 60%;
+        transform: translate(30%);
+      }
+    }
 
-		#intro {
-			flex-direction: row;
-			display: flex;
+    #intro {
+      flex-direction: row;
+      display: flex;
 
-			h1 {
-				margin-block-start: 0;
-				font-size: 5vw;
-				line-height: 1.2;
-				max-width: 50%;
-				font-weight: 500;
-			}
-			#eval {
-				margin-left: 5rem;
-				margin-top: 10px;
-				h2 {
-					font-size: 1.5vw;
-					font-weight: 300;
-					color: rgb(177, 177, 177);
-					word-spacing: 0.2rem;
-					line-height: 2rem;
-					width: 80%;
-					margin-top: 2rem;
-				}
-				em {
-					color: #9b9393;
-				}
-				.row {
-					flex-direction: row;
-					margin-top: 30px;
+      h1 {
+        margin-block-start: 0;
+        font-size: 5vw;
+        line-height: 1.2;
+        max-width: 50%;
+        font-weight: 500;
+      }
+      #eval {
+        margin-left: 5rem;
+        margin-top: 10px;
+        h2 {
+          font-size: 1.5vw;
+          font-weight: 300;
+          color: rgb(177, 177, 177);
+          word-spacing: 0.2rem;
+          line-height: 2rem;
+          width: 80%;
+          margin-top: 2rem;
+        }
+        em {
+          color: #9b9393;
+        }
+        .row {
+          flex-direction: row;
+          margin-top: 30px;
 
-					.btn {
-						padding: 1rem 1.8rem;
-						border-radius: 0.5rem;
-						color: $clr-fg-2;
-						font-size: 0.8rem;
-						font-weight: bold;
-						text-decoration: none;
-						margin-inline: auto;
-						cursor: pointer;
-						@include hover {
-							filter: brightness(1.2);
-							transition: all 0.1s ease-in-out;
-						}
-						&.primary {
-							background: $accent-1;
-							margin-right: 5px;
-						}
-						&.secondary {
-							background: gray;
-						}
-					}
-				}
-			}
-		}
+          .btn {
+            padding: 1rem 1.8rem;
+            border-radius: 0.5rem;
+            color: $clr-fg-2;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin-inline: auto;
+            cursor: pointer;
+            @include hover {
+              filter: brightness(1.2);
+              transition: all 0.1s ease-in-out;
+            }
+            &.primary {
+              background: $accent-1;
+              margin-right: 5px;
+            }
+            &.secondary {
+              background: gray;
+            }
+          }
+        }
+      }
+    }
 
-		#whatwedo {
-			margin-top: 20rem;
-		}
-		#mobile-dev {
-			margin-top: 25rem;
-			display: flex;
-			justify-content: end;
-			color: white;
-			background-color: $accent;
-			border-radius: 0.5rem 8rem 0.5rem 8rem;
-			
-			position: relative;
-			overflow-y: visible;
-			min-height: 50vh;
+    #whatwedo {
+      margin-top: 20rem;
+    }
+    #mobile-dev {
+      margin-top: 25rem;
+      display: flex;
+      justify-content: end;
+      color: white;
+      background-color: $accent;
+      border-radius: 0.5rem 8rem 0.5rem 8rem;
 
-			#phone {
-				position: absolute;
-				z-index: 1;
-				left: 25%;
-				top: 50%;
-				transform: translate(-50%, -55%);
-				// height: 120%;
-				width: 70%;
-			}
+      position: relative;
+      overflow-y: visible;
+      min-height: 50vh;
 
-			article {
-				position: relative;
-				width: 35%;
-				padding: 8% 5% 8% 0;
-				z-index: 1;
+      #phone {
+        position: absolute;
+        z-index: 1;
+        left: 25%;
+        top: 50%;
+        transform: translate(-50%, -55%);
+        // height: 120%;
+        width: 70%;
+      }
 
-				h1 {
-					margin-block-start: 0;
-					font-size: clamp(2rem, 3vw, 3rem);
-				}
+      article {
+        position: relative;
+        width: 35%;
+        padding: 8% 5% 8% 0;
+        z-index: 1;
 
-				p {
-					line-height: 2rem;
-					margin-block-end: 0;
-				}
-			}
-		}
+        h1 {
+          margin-block-start: 0;
+          font-size: clamp(2rem, 3vw, 3rem);
+        }
 
-		#desktop-web-dev {
-			margin-top: 25rem;
-			padding-bottom: 10%;
-			.paragraph {
-				article {
-					padding: 15% 15% 15% 0;
-				}
-			}
+        p {
+          line-height: 2rem;
+          margin-block-end: 0;
+        }
+      }
+    }
 
-			.backgroundImg2 {
-				img {
-					width: 80%;
-					transform: translate(-10%);
-				}
-			}
-		}
+    #desktop-web-dev {
+      margin-top: 25rem;
+      padding-bottom: 10%;
+      .paragraph {
+        article {
+          padding: 15% 15% 15% 0;
+        }
+      }
 
-		@media screen and (max-aspect-ratio: 1) {
-			margin: 0;
+      .backgroundImg2 {
+        img {
+          width: 80%;
+          transform: translate(-10%);
+        }
+      }
+    }
 
-			#intro {
-				flex-direction: column;
-				display: flex;
-				h1 {
-					height: 50vh;
-					font-size: 80px;
-					line-height: 1;
-					max-width: 100%;
-				}
-				#eval {
-					margin-left: 0rem;
-					h2 {
-						font-size: 6vw;
-						line-height: 1;
-						padding-bottom: 1rem;
-					}
-					em {
-						font-size: 16px;
-						line-height: 1;
-					}
-					.row {
-						flex-direction: row;
-						margin-top: 30px;
+    @media screen and (max-aspect-ratio: 1) {
+      margin: 0;
 
-						.btn {
-							padding: 1rem 1.8rem;
-							border-radius: 0.5rem;
-							color: $clr-fg-2;
-							font-size: 0.8rem;
-							font-weight: bold;
-							text-decoration: none;
-							margin-inline: auto;
-							cursor: pointer;
-							@include hover {
-								filter: brightness(1.2);
-								transition: all 0.1s ease-in-out;
-							}
-							&.primary {
-								background: $accent-1;
-								margin-right: 5px;
-							}
-							&.secondary {
-								background: gray;
-							}
-						}
-					}
-				}
-			}
-			#whatwedo {
-				margin-top: 10rem;
-				.paragraph {
-					text-align: center;
-					display: flex;
-					flex-direction: column-reverse;
+      #intro {
+        flex-direction: column;
+        display: flex;
+        h1 {
+          height: 50vh;
+          font-size: 80px;
+          line-height: 1;
+          max-width: 100%;
+        }
+        #eval {
+          margin-left: 0rem;
+          h2 {
+            font-size: 6vw;
+            line-height: 1;
+            padding-bottom: 1rem;
+          }
+          em {
+            font-size: 16px;
+            line-height: 1;
+          }
+          .row {
+            flex-direction: row;
+            margin-top: 30px;
 
-					article {
-						padding-top: 50px;
-						padding-left: 10px;
-						padding-right: 10px;
+            .btn {
+              padding: 1rem 1.8rem;
+              border-radius: 0.5rem;
+              color: $clr-fg-2;
+              font-size: 0.8rem;
+              font-weight: bold;
+              text-decoration: none;
+              margin-inline: auto;
+              cursor: pointer;
+              @include hover {
+                filter: brightness(1.2);
+                transition: all 0.1s ease-in-out;
+              }
+              &.primary {
+                background: $accent-1;
+                margin-right: 5px;
+              }
+              &.secondary {
+                background: gray;
+              }
+            }
+          }
+        }
+      }
+      #whatwedo {
+        margin-top: 10rem;
+        .paragraph {
+          text-align: center;
+          display: flex;
+          flex-direction: column-reverse;
 
-						p {
-							text-align: justify;
-							padding-top: 30px;
-						}
-					}
+          article {
+            padding-top: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
 
-					.backgroundImg {
-						justify-content: center;
-						img {
-							width: 85%;
-							transform: none;
-						}
-					}
-				}
-			}
+            p {
+              text-align: justify;
+              padding-top: 30px;
+            }
+          }
 
-			#mobile-dev {
-				margin-top: 15rem;
-				justify-content: center;
-				display: flex;
-				#phone {
-					top: 0;
-					left: 50%;
-					width: 75% !important;
-				}
+          .backgroundImg {
+            justify-content: center;
+            img {
+              width: 85%;
+              transform: none;
+            }
+          }
+        }
+      }
 
-				article {
-					margin-top: 7rem;
-					margin-bottom: 25px;
-					// margin: 25px;
-					width: 90%;
-					text-align: center;
+      #mobile-dev {
+        margin-top: 15rem;
+        justify-content: center;
+        display: flex;
+        #phone {
+          top: 0;
+          left: 50%;
+          width: 75% !important;
+        }
 
-					// padding: 0;
-				}
-			}
+        article {
+          margin-top: 7rem;
+          margin-bottom: 25px;
+          // margin: 25px;
+          width: 90%;
+          text-align: center;
 
-			#desktop-web-dev {
-				margin-top: 10rem;
-				text-align: center;
-				.paragraph {
-					display: flex;
-					flex-direction: column-reverse;
+          // padding: 0;
+        }
+      }
 
-					article {
-						padding-top: 50px;
-						padding-left: 10px;
-						padding-right: 10px;
+      #desktop-web-dev {
+        margin-top: 10rem;
+        text-align: center;
+        .paragraph {
+          display: flex;
+          flex-direction: column-reverse;
 
-						p {
-							text-align: justify;
-							padding-top: 30px;
-						}
-					}
-				}
+          article {
+            padding-top: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
 
-				.backgroundImg2 {
-					display: flex;
-					justify-content: center;
+            p {
+              text-align: justify;
+              padding-top: 30px;
+            }
+          }
+        }
 
-					img {
-						width: 85%;
-						transform: none;
-					}
-				}
-			}
-		}
-	}
+        .backgroundImg2 {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 85%;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
 </style>

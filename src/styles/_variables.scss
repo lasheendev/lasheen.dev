@@ -7,10 +7,10 @@ $tertiary: hsl(41, 100%, 50%);
 $error: hsl(330, 100%, 65%);
 
 // Fonts
-$ui-font: 'Poppins', sans-serif;
-$body-font: 'TabletGothicW02', sans-serif;
-$title-font: 'Lexend', sans-serif;
-$title-secondary-font: 'Larsseit', sans-serif;
+$ui-font: "Poppins", sans-serif;
+$body-font: "TabletGothicW02", sans-serif;
+$title-font: "Lexend", sans-serif;
+$title-secondary-font: "Larsseit", sans-serif;
 
 // Media queries
 $mobile-small: 320px;
@@ -37,18 +37,25 @@ $clr-bg-450: hsl(hue($bg) - 8deg, saturation($bg) - 4%, lightness($bg) - 2%);
 $clr-bg-5: hsl(hue($bg) - 8deg, saturation($bg) - 4%, lightness($bg) - 7%);
 $clr-card: hsla(hue($bg), saturation($bg) - 12%, lightness($bg) + 5%, 0.35);
 
-$accent-0: hsl(hue($accent) - 14deg, saturation($accent), lightness($accent) + 30%);
+$accent-0: hsl(
+  hue($accent) - 14deg,
+  saturation($accent),
+  lightness($accent) + 30%
+);
 $accent-05: hsl(hue($accent), saturation($accent), lightness($accent) + 15%);
-$accent-1: hsl(hue($accent) + 5deg, saturation($accent), lightness($accent) + 5%);
+$accent-1: hsl(
+  hue($accent) + 5deg,
+  saturation($accent),
+  lightness($accent) + 5%
+);
 $accent-2: $accent;
 $accent-3: hsl(hue($accent), saturation($accent), lightness($accent) - 22%);
 $accent-4: hsl(hue($accent), saturation($accent), lightness($accent) - 36%);
 
-
 @mixin hover {
-	@media (hover: hover) and (pointer: fine) {
-		&:hover {
-			@content;
-		}
-	}
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
 }
