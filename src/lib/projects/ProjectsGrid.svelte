@@ -11,7 +11,7 @@
 <div class="projects-grid">
 	{#each projects as project, i (project.id)}
 		<div animate:flip={{duration: 300}} transition:fade={{ duration: 200 }} >
-			<PostCard {project} {i} />
+			<PostCard {project} />
 		</div>
 	{/each}
 </div>

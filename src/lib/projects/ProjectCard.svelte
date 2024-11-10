@@ -1,17 +1,15 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import Icon from '@iconify/svelte';
     import type { Project } from '../../types/project';
 	export let project: Project;
-	export let i: number;
 	if (project.tags) {
 		project.tags = project.tags.slice(0, 2);
 	}
 	var url = 'projects/' + project.id;
 </script>
 
-<div class="card" in:fly={{ y: 10, duration: 300, delay: i * 200 + 200 }}>
+<div class="card">
 	<div class="card-image">
 		<img
 			data-src={project.backgroundImageSource}
@@ -50,7 +48,6 @@
 		max-width: 630px;
 		background: $clr-card;
 		border-radius: 1.5rem;
-		transition: all 200ms ease-in-out, transform 100ms;
 		padding: 0.7rem;
 
 		.card-image {
