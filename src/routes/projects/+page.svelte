@@ -50,7 +50,13 @@
 <section class="latest">
   <h2>Projects</h2>
   <FilterChips {filters} bind:selectedFilters />
-  <ProjectsGrid projects={filteredProjects} />
+  {#if filteredProjects.length > 0}
+    <ProjectsGrid projects={filteredProjects} />
+  {:else}
+    <div class="no-results">
+      No projects found with selected filters. Please adjust your selection.
+    </div>
+  {/if}
 </section>
 
 <style lang="scss">
@@ -68,6 +74,20 @@
       font-size: 1.3rem;
       color: $clr-fg-2;
       font-weight: 400;
+    }
+  }
+
+  .no-results {
+    text-align: center;
+    padding: 2rem;
+    color: $clr-fg-2;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: $tablet) {
+    .no-results {
+      font-size: 1rem;
+      padding: 1rem;
     }
   }
 </style>
