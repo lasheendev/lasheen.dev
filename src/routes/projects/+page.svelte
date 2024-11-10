@@ -1,17 +1,19 @@
-<script>
+<script lang="ts">
     import ProjectsGrid from '$lib/projects/ProjectsGrid.svelte';
     import FilterChips from '$lib/projects/FilterChips.svelte';
     import { onMount } from 'svelte';
+    import type { Project,ProjectResponse } from '../../types/project';
 
-    let latestProjects = [];
-    let filteredProjects = [];
-    let filters = [];
-    let selectedFilters = [];
+    let latestProjects: Project[] = [];
+    let filteredProjects: Project[] = [];
+    let filters: string[] = [];
+    let selectedFilters: string[] = [];
 
-    const githubUrl = 'https://raw.githubusercontent.com/lasheendev/lasheen.dev/refs/heads/master/json/projects.json';
+    const githubUrl: string = 'https://raw.githubusercontent.com/lasheendev/lasheen.dev/refs/heads/master/json/projects_v2.json';
 
-    async function fetchProjects() {
+    async function fetchProjects(): Promise<ProjectResponse> {
         const response = await fetch(githubUrl);
+        
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -20,8 +22,8 @@
 
     $: {
         filteredProjects = selectedFilters.length > 0
-            ? latestProjects.filter(project => 
-                project.tags?.some(tech => 
+            ? latestProjects.filter((project: Project) => 
+                project.tags.some((tech: string) => 
                     selectedFilters.includes(tech)
                 )
             )
@@ -30,14 +32,13 @@
 
     onMount(async () => {
         try {
-            const data = await fetchProjects();
-            latestProjects = Object.values(data);
-            // Extract unique technologies for filters
+            const data: ProjectResponse = await fetchProjects();
+            latestProjects = Object.values(data.projects);
             filters = [...new Set(
-                latestProjects.flatMap(project => project.tags || [])
+                latestProjects.flatMap(project => project.tags)
             )];
-        } catch (error) {
-            console.error('Error fetching projects:', error);
+        } catch (error: unknown) {
+            console.error('Error fetching projects:', error instanceof Error ? error.message : error);
         }
     });
 </script>

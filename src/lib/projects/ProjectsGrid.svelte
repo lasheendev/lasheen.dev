@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
 	import { flip } from 'svelte/animate';
 	import { fade } from 'svelte/transition';
 
 	import PostCard from './ProjectCard.svelte';
+    import type { Project } from '../../types/project';
 
-	export let projects;
+	export let projects: Project[];
 </script>
 
 <div class="projects-grid">

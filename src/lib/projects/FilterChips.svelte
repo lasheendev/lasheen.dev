@@ -1,8 +1,8 @@
-<script>
-    export let filters = [];
-    export let selectedFilters = [];
+<script lang="ts">
+    export let filters = <string[]>[];
+    export let selectedFilters = <string[]>[];
   
-    function toggleFilter(filter) {
+    function toggleFilter( filter: string): void {
       if (selectedFilters.includes(filter)) {
         selectedFilters = selectedFilters.filter(f => f !== filter);
       } else {

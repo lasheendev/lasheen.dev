@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { useLazyImage as lazyImage } from 'svelte-lazy-image';
 	import Icon from '@iconify/svelte';
-	export let project;
-	export let i;
+    import type { Project } from '../../types/project';
+	export let project: Project;
+	export let i: number;
 	if (project.tags) {
 		project.tags = project.tags.slice(0, 2);
 	}
