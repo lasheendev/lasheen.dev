@@ -45,26 +45,6 @@
           "color": "#0f47b741",
           "icon": "mdi:web",
           "id": "Website",
-          "url": "https://menuscan.lasheen.dev/"
-        }
-      ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835535/lasheen.dev/projects/menuscan/denf3cjajojed6tthaop.png",
-      "client": "Personal",
-      "credits": "Youssef Lasheen",
-      "date": "Feb 25, 2024",
-      "id": "menuscan",
-      "longDescription": "A website for resturants to provide resturants with a qr online menu",
-      "role": "App developer and designer",
-      "shortDescription": "Online QR Menu",
-      "tags": ["Web", "MySQL"],
-      "title": "MenuScan"
-    },
-    {
-      "access": [
-        {
-          "color": "#0f47b741",
-          "icon": "mdi:web",
-          "id": "Website",
           "url": "https://myintimate.app/"
         },
         {
