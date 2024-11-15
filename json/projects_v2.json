@@ -3,6 +3,57 @@
     {
       "access": [
         {
+          "color": "black",
+          "icon": "simple-icons:appstore",
+          "id": "Appstore",
+          "url": "https://apps.apple.com/us/app/simply-nikah/id6471347083"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore",
+          "url": "https://play.google.com/store/apps/details?id=com.simplynikah.app"
+        }
+      ],
+      "date": "2024-05-14",
+      "id": "simplynikah",
+      "shortDescription": "Muslim Matrimonial app",
+      "tags": [
+        "Flutter",
+        "Full-Time",
+        "Mobile"
+      ],
+      "title": "Simply Nikah"
+    },
+    {
+      "access": [
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore-Driver",
+          "url": "https://play.google.com/store/apps/details?id=com.togo.driverApp"
+        },
+        {
+          "color": "black",
+          "icon": "ion:logo-google-playstore",
+          "id": "Playstore-Rider",
+          "url": "https://play.google.com/store/apps/details?id=com.inweb.togo"
+        }
+      ],
+      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688837472/lasheen.dev/projects/2go/dij2tbwx7gjn32hzq6f1.png",
+      "date": "2022-07-15",
+      "id": "2go",
+      "shortDescription": "Local Taxi app",
+      "tags": [
+        "Flutter",
+        "Full-Time",
+        "Mobile"
+      ],
+      "title": "2GO Rider/Driver"
+    },
+    {
+      "access": [
+        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
@@ -59,31 +110,6 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "simple-icons:appstore",
-          "id": "Appstore",
-          "url": "https://apps.apple.com/us/app/simply-nikah/id6471347083"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=com.simplynikah.app"
-        }
-      ],
-      "date": "2024-05-14",
-      "id": "simplynikah",
-      "shortDescription": "Muslim Matrimonial app",
-      "tags": [
-        "Flutter",
-        "Full-Time",
-        "Mobile"
-      ],
-      "title": "Simply Nikah"
-    },
-    {
-      "access": [
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
@@ -126,35 +152,9 @@
       "tags": [
         "Flutter",
         "Mobile",
-        "Personal"
+        "Freelance"
       ],
       "title": "Surelight Express"
-    },
-    {
-      "access": [
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore-Driver",
-          "url": "https://play.google.com/store/apps/details?id=com.togo.driverApp"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore-Rider",
-          "url": "https://play.google.com/store/apps/details?id=com.inweb.togo"
-        }
-      ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688837472/lasheen.dev/projects/2go/dij2tbwx7gjn32hzq6f1.png",
-      "date": "2022-07-15",
-      "id": "2go",
-      "shortDescription": "Local Taxi app",
-      "tags": [
-        "Flutter",
-        "Full-Time",
-        "Mobile"
-      ],
-      "title": "2GO Rider/Driver"
     },
     {
       "access": [],
