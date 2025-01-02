@@ -113,30 +113,6 @@
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
-          "url": "https://github.com/YoussefLasheen/cashier"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.cashier"
-        }
-      ],
-      "date": "2023-07-30",
-      "id": "cashier",
-      "shortDescription": "Cashier app",
-      "tags": [
-        "Flutter",
-        "Mobile"
-      ],
-      "title": "Cashier"
-    },
-    {
-      "access": [
-        {
-          "color": "#23863778",
-          "icon": "mdi:github",
-          "id": "Github",
           "url": "https://github.com/YoussefLasheen/surelight"
         },
         {
@@ -234,38 +210,6 @@
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
-          "url": "https://github.com/CrowdSolve"
-        },
-        {
-          "color": "#0f47b741",
-          "icon": "mdi:web",
-          "id": "Website",
-          "url": "https://crowdsolve.lasheen.dev/#/"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.crowdsolve"
-        }
-      ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688838106/lasheen.dev/projects/cs/mdxzumf1rv8g3srgekxw.png",
-      "date": "2022-04-27",
-      "id": "crowdsolve",
-      "shortDescription": "Information sharing app",
-      "tags": [
-        "Flutter",
-        "Mobile",
-        "Personal"
-      ],
-      "title": "Crowd Solve"
-    },
-    {
-      "access": [
-        {
-          "color": "#23863778",
-          "icon": "mdi:github",
-          "id": "Github",
           "url": "https://github.com/YoussefLasheen/flurry_navigation"
         },
         {
@@ -317,31 +261,6 @@
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
-          "url": "https://github.com/YoussefLasheen/gold"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.gold"
-        }
-      ],
-      "date": "2022-11-22",
-      "id": "gold",
-      "shortDescription": "Track gold prices",
-      "tags": [
-        "Flutter",
-        "Mobile",
-        "Personal"
-      ],
-      "title": "Gold Prices"
-    },
-    {
-      "access": [
-        {
-          "color": "#23863778",
-          "icon": "mdi:github",
-          "id": "Github",
           "url": "https://github.com/YoussefLasheen/qr"
         },
         {
@@ -362,32 +281,6 @@
         "Personal"
       ],
       "title": "QR"
-    },
-    {
-      "access": [
-        {
-          "color": "#23863778",
-          "icon": "mdi:github",
-          "id": "Github",
-          "url": "https://github.com/YoussefLasheen/doze"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.doze"
-        }
-      ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835512/lasheen.dev/projects/doze/r0gevc1ym5t8nfwco0ty.png",
-      "date": "2020-02-15",
-      "id": "doze",
-      "shortDescription": "A SMART Napping App",
-      "tags": [
-        "Flutter",
-        "Mobile",
-        "Personal"
-      ],
-      "title": "doze"
     }
   ]
 }
