@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Projects Schema",
+    "description": "Schema for personal projects portfolio",
+    "type": "object",
+    "required": ["projects"],
+    "properties": {
+      "$schema": {
+        "type": "string",
+        "description": "Path to the JSON schema file"
+      },
+      "projects": {
+        "type": "array",
+        "description": "List of projects",
+        "items": {
+          "type": "object",
+          "required": ["id", "title", "shortDescription", "date", "tags", "access"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Unique identifier for the project"
+            },
+            "title": {
+              "type": "string",
+              "description": "Project title"
+            },
+            "shortDescription": {
+              "type": "string",
+              "description": "Brief description of the project"
+            },
+            "date": {
+              "type": "string",
+              "description": "Project release date (YYYY-MM-DD)",
+              "format": "date"
+            },
+            "tags": {
+              "type": "array",
+              "description": "Project categories/technologies",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            },
+            "backgroundImageSource": {
+              "type": "string",
+              "description": "URL to project screenshot or logo image",
+              "format": "uri"
+            },
+            "access": {
+              "type": "array",
+              "description": "Links to access the project",
+              "items": {
+                "type": "object",
+                "required": ["id", "icon", "color", "url"],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "Link identifier (e.g., Github, Playstore)"
+                  },
+                  "icon": {
+                    "type": "string",
+                    "description": "Icon identifier for the link"
+                  },
+                  "color": {
+                    "type": "string",
+                    "description": "Color for the icon (hex or named color)"
+                  },
+                  "url": {
+                    "type": "string",
+                    "description": "URL to access the project",
+                    "format": "uri"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
