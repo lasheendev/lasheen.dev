@@ -41,7 +41,7 @@
           "url": "https://play.google.com/store/apps/details?id=com.inweb.togo"
         }
       ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688837472/lasheen.dev/projects/2go/dij2tbwx7gjn32hzq6f1.png",
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/2go.png?raw=true",
       "date": "2022-07-15",
       "id": "2go",
       "shortDescription": "Local Taxi app",
@@ -135,7 +135,7 @@
     },
     {
       "access": [],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835638/lasheen.dev/projects/wtc/uymasiyarqtdbsokb4sz.png",
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/wtc.png?raw=true",
       "date": "2023-04-22",
       "id": "wtc",
       "shortDescription": "PDF Helper app",
@@ -167,7 +167,7 @@
           "url": "https://myintimate.app/"
         }
       ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695798403/lasheen.dev/projects/intimate/g2dkpkwojg22bq3azuid.png",
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/intimate.png?raw=true",
       "date": "2023-07-15",
       "id": "intimate",
       "shortDescription": "AI dating simulator",
@@ -193,7 +193,7 @@
           "url": "https://snapcraft.io/harmony"
         }
       ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695797816/lasheen.dev/projects/harmony/vhlttlwj5qni33y8iafl.png",
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/harmony.png?raw=true",
       "date": "2023-02-11",
       "id": "harmony",
       "shortDescription": "Keyboard simulator",
@@ -245,7 +245,7 @@
           "url": "https://pub.dev/packages/gtk_window"
         }
       ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835580/lasheen.dev/projects/gtk_window/j9wmcrdrymtlexabwtfb.png",
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/header.png?raw=true",
       "date": "2022-12-10",
       "id": "gtk_window",
       "shortDescription": "Header for GTK",
@@ -271,7 +271,7 @@
           "url": "https://snapcraft.io/qr-scanner"
         }
       ],
-      "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1688835644/lasheen.dev/projects/qr/gejse3gvn3hk18yvhrrt.png",
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/qr.png?raw=true",
       "date": "2022-12-05",
       "id": "qr",
       "shortDescription": "QRcode Scanner and generator",
