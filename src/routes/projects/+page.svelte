@@ -2,24 +2,14 @@
   import ProjectsGrid from "$lib/projects/ProjectsGrid.svelte";
   import FilterChips from "$lib/projects/FilterChips.svelte";
   import { onMount } from "svelte";
-  import type { Project, ProjectResponse } from "../../types/project";
+  import { fetchProjects } from "$lib/projects/fetchProjects";
+  import type { Project } from "../../types/project";
 
   let latestProjects: Project[] = [];
   let filteredProjects: Project[] = [];
   let filters: string[] = [];
   let selectedFilters: string[] = [];
-
-  const githubUrl: string =
-    "https://raw.githubusercontent.com/lasheendev/lasheen.dev/refs/heads/master/json/projects_v2.json";
-
-  async function fetchProjects(): Promise<ProjectResponse> {
-    const response = await fetch(githubUrl);
-
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    return response.json();
-  }
+  let loading = true;
 
   $: {
     filteredProjects =
@@ -34,22 +24,33 @@
 
   onMount(async () => {
     try {
-      const data: ProjectResponse = await fetchProjects();
-      latestProjects = Object.values(data.projects);
+      latestProjects = await fetchProjects();
       filters = [...new Set(latestProjects.flatMap((project) => project.tags))];
     } catch (error: unknown) {
       console.error(
         "Error fetching projects:",
         error instanceof Error ? error.message : error,
       );
+    } finally {
+      loading = false;
     }
   });
 </script>
 
+<svelte:head>
+  <title>Projects | Youssef Lasheen</title>
+  <meta
+    name="description"
+    content="Apps and packages built by Youssef Lasheen: mobile apps on the App Store and Play Store, Linux desktop apps, and open-source Flutter packages."
+  />
+</svelte:head>
+
 <section class="latest">
   <h2>Projects</h2>
   <FilterChips {filters} bind:selectedFilters />
-  {#if filteredProjects.length > 0}
+  {#if loading}
+    <div class="no-results">Loading projects…</div>
+  {:else if filteredProjects.length > 0}
     <ProjectsGrid projects={filteredProjects} />
   {:else}
     <div class="no-results">

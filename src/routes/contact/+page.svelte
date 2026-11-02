@@ -29,13 +29,27 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Contact | Youssef Lasheen</title>
+  <meta
+    name="description"
+    content="Get in touch with Youssef Lasheen about a freelance project, a role, or anything else."
+  />
+</svelte:head>
+
 <div id="body">
   <header>
-    <h2>Get in Touch!</h2>
+    <h2>Get in touch</h2>
     <p>
-      Contact us on social media or via email <a href="mailto::info@lasheen.dev"
-        >info@lasheen.dev</a
-      >
+      Have an app idea, a project, or a role you think I'd be a good fit for?
+      Email me at <a href="mailto:youssef@lasheen.dev">youssef@lasheen.dev</a>.
+      I reply within 2 business days.
+    </p>
+    <p class="personal">
+      You can also find me on
+      <a href="https://linkedin.com/in/yousseflasheen">LinkedIn</a> and
+      <a href="https://github.com/YoussefLasheen">GitHub</a>. lasheen.dev is on
+      the networks below.
     </p>
   </header>
 
@@ -57,6 +71,31 @@
 </div>
 
 <style lang="scss">
+  header {
+    max-width: 42rem;
+
+    h2 {
+      color: $clr-fg-1;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.8;
+      & + p {
+        margin-top: 0.75rem;
+      }
+    }
+
+    a {
+      color: $accent-0;
+      &:hover {
+        color: $clr-fg-1;
+      }
+    }
+  }
+
   .button-container {
     padding-top: 50px;
     display: grid;
