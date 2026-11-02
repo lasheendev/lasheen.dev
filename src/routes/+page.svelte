@@ -1,378 +1,275 @@
-<script>
-  import editor from "../assets/images/illustration-editor.svg";
-  import laptop from "../assets/images/illustration-laptop.svg";
-
+<script lang="ts">
+  import { onMount } from "svelte";
   import phone from "../assets/images/illustration-phones.svg";
+  import ProjectsGrid from "$lib/projects/ProjectsGrid.svelte";
+  import { fetchProjects } from "$lib/projects/fetchProjects";
+  import type { Project } from "../types/project";
+
+  // Shown on the home page, in this order. The rest live on /projects.
+  const featuredIds = ["simplynikah", "2go", "surelight-express"];
+
+  let featured: Project[] = [];
+
+  onMount(async () => {
+    try {
+      const projects = await fetchProjects();
+      featured = featuredIds
+        .map((id) => projects.find((project) => project.id === id))
+        .filter((project): project is Project => project !== undefined);
+    } catch (error: unknown) {
+      console.error(
+        "Error fetching projects:",
+        error instanceof Error ? error.message : error,
+      );
+    }
+  });
 </script>
 
 <svelte:head>
-  <title>lasheen.dev | Portfolio</title>
-  <meta name="title" content="lasheen.dev | portfolio" />
+  <title>Youssef Lasheen | Mobile App Developer</title>
+  <meta name="title" content="Youssef Lasheen | Mobile App Developer" />
   <meta
     name="description"
-    content="Welcome to lasheen.dev, your premier destination for cutting-edge software development solutions. As an up and coming software development agency, we are dedicated to providing our clients with innovative and customized software solutions that empower their businesses in the digital age. With a team of highly skilled and experienced software engineers, designers, and project managers, we offer a wide range of services tailored to meet the unique needs of each client. From concept to deployment, we are committed to delivering top-notch software products that drive efficiency, enhance user experiences, and maximize business potential. Contact us today to discuss your software development needs and let us help you unlock the true potential of your business through innovative technology solutions."
+    content="I'm Youssef Lasheen, a Flutter and SwiftUI developer in Cairo. I've shipped 10+ apps and packages, and through lasheen.dev I take on select freelance projects."
   />
 </svelte:head>
 
-<main>
-  <section id="intro">
-    <h1>Turn your amazing ideas into reality</h1>
-    <div id="eval">
-      <h2>
-        Book an evaluation now for free. And get a price quote the same day
-        guarnteed
-      </h2>
-      <em>Special prices for NPOs</em>
-      <div class="row">
-        <a href="/contact" class="btn primary">CONTACT US</a>
-        <a href="/projects" class="btn secondary">VIEW WORK</a>
-      </div>
-    </div>
-  </section>
-  <section id="whatwedo">
-    <div class="paragraph">
-      <article>
-        <div>
-          <h2>
-            Cutting-Edge Programming Solutions for Streamlined Development
-          </h2>
-          <p>
-            At lasheen.dev, we specialize in providing cutting-edge software
-            development services to help businesses transform their ideas into
-            reality. Our expert team of programmers is well-versed in the latest
-            programming languages and technologies, ensuring that we deliver
-            high-quality solutions tailored to meet your specific needs. Whether
-            you require a web application, mobile app, or desktop software, we
-            have the expertise to architect and design efficient and
-            user-friendly solutions.
-          </p>
-        </div>
-      </article>
-      <div class="backgroundImg">
-        <img src={editor} alt="Editor" />
-        <!-- <img src={editorMobile} alt="Editor" /> -->
-      </div>
-    </div>
-  </section>
-  <section id="mobile-dev">
-    <img id="phone" src={phone} alt="Phone" />
+<section id="intro">
+  <p class="eyebrow">Youssef Lasheen · lasheen.dev</p>
+  <h1>Hi, I'm Youssef.<br />I build mobile apps.</h1>
+  <p class="lede">
+    I'm a Flutter and SwiftUI developer based in Cairo. By day I lead app
+    development at Simply Nikah. Through lasheen.dev, my independent studio, I
+    take on a few freelance projects alongside it.
+  </p>
+  <div class="row">
+    <a href="/projects" class="btn primary">See my work</a>
+    <a href="#work-with-me" class="btn secondary">Work with me</a>
+    <a href="https://resume.lasheen.dev" class="text-link">Resume →</a>
+  </div>
 
+  <ul class="facts">
+    <li><strong>10+</strong> apps and packages shipped</li>
+    <li><strong>App Store · Play Store · Snapcraft</strong> and pub.dev</li>
+    <li><strong>Open source</strong> contributor to ubuntu-flutter-community</li>
+  </ul>
+</section>
+
+<section id="featured">
+  <header>
+    <h2>Selected work</h2>
+    <a href="/projects" class="text-link">All projects →</a>
+  </header>
+  {#if featured.length > 0}
+    <ProjectsGrid projects={featured} />
+  {:else}
+    <p class="muted">
+      Loading projects… If nothing shows up, <a href="/projects">see them all</a
+      >.
+    </p>
+  {/if}
+</section>
+
+<section id="work-with-me">
+  <div class="panel">
     <article>
-      <h1>Mobile App Development</h1>
+      <h2>Work with me</h2>
       <p>
-        With our expertise in mobile app development, we empower your business
-        to leverage the full potential of mobile technology. Whether you need a
-        consumer-facing app, an enterprise solution, or a gaming application, we
-        can bring your ideas to life. From concept to deployment, we handle
-        every aspect of the development process, ensuring that your app meets
-        the highest standards of performance, usability, and security. Partner
-        with us to deliver a mobile experience that keeps your customers coming
-        back for more.
+        I take on a small number of freelance projects alongside my full-time
+        role. Keeping the list short means each one gets my full attention, and
+        you work directly with the person writing the code.
       </p>
+
+      <h3>What I build</h3>
+      <ul>
+        <li>
+          <strong>Mobile apps</strong>: iOS and Android with Flutter or
+          SwiftUI, from first idea to App Store and Play Store launch.
+        </li>
+        <li>
+          <strong>Desktop and web</strong>: Linux desktop apps, Flutter web
+          and websites.
+        </li>
+      </ul>
+
+      <h3>How it works</h3>
+      <ol>
+        <li>Tell me about your idea. The first call is free.</li>
+        <li>I reply with a scope and a quote within 2 business days.</li>
+        <li>We build, test and launch it together.</li>
+      </ol>
+
+      <p class="note">Discounted rates for non-profits.</p>
+
+      <a href="/contact" class="btn light">Get in touch</a>
     </article>
-  </section>
-  <section id="desktop-web-dev">
-    <div class="paragraph">
-      <div class="backgroundImg2">
-        <img src={laptop} alt="Laptop" />
-        <!-- <img src={laptopMobile} alt="Laptop" /> -->
-      </div>
-      <article>
-        <div>
-          <h2>Desktop and Web Development</h2>
-          <p>
-            In addition to mobile app development, we offer top-notch desktop
-            and web development services. With our expertise in multiple
-            programming languages, frameworks, and platforms, we have the
-            versatility to build powerful solutions for any platform. Whether
-            you need a desktop software application, a responsive website, or a
-            complex web portal, we have the skills and experience to deliver
-            outstanding results.
-          </p>
-        </div>
-      </article>
-    </div>
-  </section>
-</main>
+    <img id="phone" src={phone} alt="" aria-hidden="true" />
+  </div>
+</section>
 
 <style lang="scss">
-  main {
-    margin-left: 7.5rem;
-    margin-right: 2.5rem;
+  section + section {
+    margin-top: 6rem;
+  }
 
-    .paragraph {
-      margin-block-start: 8rem;
-      display: grid;
-      grid-template-columns: 50% 50%;
+  .eyebrow {
+    color: $accent-0;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+  }
 
-      article {
-        padding: 0% 0 15% 0%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  h1 {
+    color: $clr-fg-1;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.1;
+  }
 
-        h2 {
-          color: var(--very-dark-blue);
-          font-size: clamp(1.5rem, 2vw, 2rem);
-        }
+  h2 {
+    color: $clr-fg-2;
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 600;
+  }
 
-        p {
-          color: var(--very-dark-grayish-blue);
-          line-height: 2rem;
-        }
-      }
+  .lede {
+    max-width: 40rem;
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: $clr-fg-4;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.9rem 1.6rem;
+    border-radius: 0.5rem;
+    color: $clr-fg-1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    @include hover {
+      filter: brightness(1.2);
+      transition: all 0.1s ease-in-out;
+    }
+    &.primary {
+      background: $accent-1;
+    }
+    &.secondary {
+      background: $clr-bg-350;
+    }
+    &.light {
+      margin-top: 1.5rem;
+      background: $clr-fg-1;
+      color: $accent-3;
+    }
+  }
+
+  .text-link {
+    color: $accent-0;
+    font-weight: 500;
+    &:hover {
+      color: $clr-fg-1;
+    }
+  }
+
+  .facts {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2.5rem;
+    margin-top: 3rem;
+    color: $clr-fg-4;
+    font-size: 0.95rem;
+
+    strong {
+      color: $clr-fg-2;
+      font-weight: 600;
+    }
+  }
+
+  #featured header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .muted {
+    color: $clr-fg-4;
+  }
+
+  #work-with-me .panel {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem 4rem 0.5rem 4rem;
+    background: $accent;
+    color: $clr-fg-1;
+    overflow: hidden;
+
+    h2 {
+      color: $clr-fg-1;
     }
 
-    .backgroundImg {
-      img {
-        width: 60%;
-        transform: translate(30%);
-      }
+    h3 {
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 600;
     }
 
-    #intro {
-      flex-direction: row;
-      display: flex;
-
-      h1 {
-        margin-block-start: 0;
-        font-size: 5vw;
-        line-height: 1.2;
-        max-width: 50%;
-        font-weight: 500;
-      }
-      #eval {
-        margin-left: 5rem;
-        margin-top: 10px;
-        h2 {
-          font-size: 1.5vw;
-          font-weight: 300;
-          color: rgb(177, 177, 177);
-          word-spacing: 0.2rem;
-          line-height: 2rem;
-          width: 80%;
-          margin-top: 2rem;
-        }
-        em {
-          color: #9b9393;
-        }
-        .row {
-          flex-direction: row;
-          margin-top: 30px;
-
-          .btn {
-            padding: 1rem 1.8rem;
-            border-radius: 0.5rem;
-            color: $clr-fg-2;
-            font-size: 0.8rem;
-            font-weight: bold;
-            text-decoration: none;
-            margin-inline: auto;
-            cursor: pointer;
-            @include hover {
-              filter: brightness(1.2);
-              transition: all 0.1s ease-in-out;
-            }
-            &.primary {
-              background: $accent-1;
-              margin-right: 5px;
-            }
-            &.secondary {
-              background: gray;
-            }
-          }
-        }
-      }
+    p,
+    li {
+      line-height: 1.8;
     }
 
-    #whatwedo {
-      margin-top: 20rem;
+    p {
+      margin-top: 1rem;
+      max-width: 38rem;
     }
-    #mobile-dev {
-      margin-top: 25rem;
-      display: flex;
-      justify-content: end;
-      color: white;
-      background-color: $accent;
-      border-radius: 0.5rem 8rem 0.5rem 8rem;
 
-      position: relative;
-      overflow-y: visible;
-      min-height: 50vh;
+    ul,
+    ol {
+      padding-left: 1.25rem;
+    }
+
+    .note {
+      font-style: italic;
+      opacity: 0.85;
+    }
+
+    #phone {
+      width: 100%;
+      max-width: 22rem;
+      justify-self: center;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    section + section {
+      margin-top: 4rem;
+    }
+
+    #work-with-me .panel {
+      grid-template-columns: 1fr;
+      padding: 2rem 1.5rem;
+      border-radius: 0.5rem 2rem 0.5rem 2rem;
 
       #phone {
-        position: absolute;
-        z-index: 1;
-        left: 25%;
-        top: 50%;
-        transform: translate(-50%, -55%);
-        // height: 120%;
-        width: 70%;
-      }
-
-      article {
-        position: relative;
-        width: 35%;
-        padding: 8% 5% 8% 0;
-        z-index: 1;
-
-        h1 {
-          margin-block-start: 0;
-          font-size: clamp(2rem, 3vw, 3rem);
-        }
-
-        p {
-          line-height: 2rem;
-          margin-block-end: 0;
-        }
-      }
-    }
-
-    #desktop-web-dev {
-      margin-top: 25rem;
-      padding-bottom: 10%;
-      .paragraph {
-        article {
-          padding: 15% 15% 15% 0;
-        }
-      }
-
-      .backgroundImg2 {
-        img {
-          width: 80%;
-          transform: translate(-10%);
-        }
-      }
-    }
-
-    @media screen and (max-aspect-ratio: 1) {
-      margin: 0;
-
-      #intro {
-        flex-direction: column;
-        display: flex;
-        h1 {
-          height: 50vh;
-          font-size: 80px;
-          line-height: 1;
-          max-width: 100%;
-        }
-        #eval {
-          margin-left: 0rem;
-          h2 {
-            font-size: 6vw;
-            line-height: 1;
-            padding-bottom: 1rem;
-          }
-          em {
-            font-size: 16px;
-            line-height: 1;
-          }
-          .row {
-            flex-direction: row;
-            margin-top: 30px;
-
-            .btn {
-              padding: 1rem 1.8rem;
-              border-radius: 0.5rem;
-              color: $clr-fg-2;
-              font-size: 0.8rem;
-              font-weight: bold;
-              text-decoration: none;
-              margin-inline: auto;
-              cursor: pointer;
-              @include hover {
-                filter: brightness(1.2);
-                transition: all 0.1s ease-in-out;
-              }
-              &.primary {
-                background: $accent-1;
-                margin-right: 5px;
-              }
-              &.secondary {
-                background: gray;
-              }
-            }
-          }
-        }
-      }
-      #whatwedo {
-        margin-top: 10rem;
-        .paragraph {
-          text-align: center;
-          display: flex;
-          flex-direction: column-reverse;
-
-          article {
-            padding-top: 50px;
-            padding-left: 10px;
-            padding-right: 10px;
-
-            p {
-              text-align: justify;
-              padding-top: 30px;
-            }
-          }
-
-          .backgroundImg {
-            justify-content: center;
-            img {
-              width: 85%;
-              transform: none;
-            }
-          }
-        }
-      }
-
-      #mobile-dev {
-        margin-top: 15rem;
-        justify-content: center;
-        display: flex;
-        #phone {
-          top: 0;
-          left: 50%;
-          width: 75% !important;
-        }
-
-        article {
-          margin-top: 7rem;
-          margin-bottom: 25px;
-          // margin: 25px;
-          width: 90%;
-          text-align: center;
-
-          // padding: 0;
-        }
-      }
-
-      #desktop-web-dev {
-        margin-top: 10rem;
-        text-align: center;
-        .paragraph {
-          display: flex;
-          flex-direction: column-reverse;
-
-          article {
-            padding-top: 50px;
-            padding-left: 10px;
-            padding-right: 10px;
-
-            p {
-              text-align: justify;
-              padding-top: 30px;
-            }
-          }
-        }
-
-        .backgroundImg2 {
-          display: flex;
-          justify-content: center;
-
-          img {
-            width: 85%;
-            transform: none;
-          }
-        }
+        display: none;
       }
     }
   }

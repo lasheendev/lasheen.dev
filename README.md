@@ -1,5 +1,5 @@
 # [lasheen.dev](https://lasheen.dev)
 
-Welcome to lasheen.dev, our new main website.
+The personal site of Youssef Lasheen and his independent studio, lasheen.dev.
 
-It is made with svelte and based on our old flutter web website so it's much faster and better for SEO.
+Built with SvelteKit. Projects are listed in `json/projects_v2.json`.
