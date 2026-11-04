@@ -58,31 +58,6 @@
     "role": "App developer and designer",
     "id": "menuscan"
   },
-  "intimate": {
-    "longDescription": "",
-    "access": {
-      "Website": {
-        "color": "#0f47b741",
-        "url": "https://myintimate.app/",
-        "icon": "mdi:web"
-      },
-      "Playstore": {
-        "url": "https://play.google.com/store/apps/details?id=com.growinpainsllc.intimate&pli=1",
-        "color": "black",
-        "icon": "ion:logo-google-playstore"
-      }
-    },
-    "client": "Personal",
-    "date": "15 July 2023",
-    "role": "Flutter Developer",
-    "title": "Intimate - AI Girlfriend",
-    "backgroundImageSource": "https://res.cloudinary.com/diukk4d8w/image/upload/q_auto,f_auto,w_480/v1695798403/lasheen.dev/projects/intimate/g2dkpkwojg22bq3azuid.png",
-    "tags": ["Mobile", "UI/UX"],
-    "order": 1,
-    "shortDescription": "AI dating simulator",
-    "credits": "Youssef Lasheen",
-    "id": "intimate"
-  },
   "harmony": {
     "order": 1,
     "longDescription": "A beautiful musical keyboard (piano) app made with flutter. Built with love by lasheen.dev",

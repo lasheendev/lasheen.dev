@@ -124,33 +124,6 @@
     {
       "access": [
         {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=com.growinpainsllc.intimate&pli=1"
-        },
-        {
-          "color": "#0f47b741",
-          "icon": "mdi:web",
-          "id": "Website",
-          "url": "https://myintimate.app/"
-        }
-      ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/intimate.png?raw=true",
-      "date": "2023-07-15",
-      "category": "client",
-      "id": "intimate",
-      "shortDescription": "AI dating simulator",
-      "tags": [
-        "Flutter",
-        "Mobile",
-        "UI/UX"
-      ],
-      "title": "Intimate - AI Girlfriend"
-    },
-    {
-      "access": [
-        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
