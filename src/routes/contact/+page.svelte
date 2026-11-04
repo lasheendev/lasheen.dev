@@ -104,21 +104,19 @@
     max-width: 42rem;
 
     h2 {
-      color: $clr-fg-1;
       font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 1rem;
     }
 
     p {
-      line-height: 1.8;
+      color: $text-muted;
+      font-size: 1.05rem;
+      line-height: 1.75;
     }
 
     a {
-      color: $accent-0;
-      &:hover {
-        color: $clr-fg-1;
-      }
+      font-weight: 600;
     }
   }
 
@@ -126,15 +124,14 @@
     margin-top: 3rem;
 
     h3 {
-      color: $clr-fg-2;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 600;
     }
 
     .description {
       margin-top: 0.25rem;
-      color: $clr-fg-4;
-      font-size: 0.9rem;
+      color: $text-muted;
+      font-size: 0.95rem;
     }
   }
 
@@ -149,21 +146,23 @@
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
-    padding: 0.8rem 1.2rem;
-    border-radius: 0.6rem;
-    background: var(--color);
-    color: #fff;
+    padding: 0.75rem 1.1rem;
+    border: 1px solid $border;
+    border-radius: 0.65rem;
+    background: $surface;
+    color: $text;
     font-weight: 500;
     font-size: 0.95rem;
-    transition: box-shadow 0.2s ease-in-out;
+    transition: border-color 0.15s ease;
 
     :global(svg) {
-      font-size: 1.4rem;
+      font-size: 1.35rem;
+      color: var(--color);
     }
 
     &:hover {
-      color: #fff;
-      box-shadow: 0 0 16px var(--color);
+      border-color: $text-subtle;
+      color: $text;
     }
   }
 </style>

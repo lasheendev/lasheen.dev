@@ -89,13 +89,13 @@
         {
           "color": "black",
           "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
+          "id": "Playstore-Etisalat",
           "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.etisalat"
         },
         {
           "color": "black",
           "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
+          "id": "Playstore-Orange",
           "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.orange"
         }
       ],
@@ -143,7 +143,7 @@
       "tags": [
         "Freelance",
         "Mobile",
-        "flutter"
+        "Flutter"
       ],
       "title": "Winning The Claim"
     },
