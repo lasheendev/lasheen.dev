@@ -1,30 +1,60 @@
 <script>
   import Icon from "@iconify/svelte";
 
-  const socialMediaLinks = [
+  const groups = [
     {
-      name: "Facebook",
-      url: "https://www.facebook.com/lasheen.dev/",
-      icon: "mdi:facebook",
-      color: "#3b5998",
+      title: "lasheen.dev",
+      description: "Studio news, launches and client work.",
+      links: [
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/company/lasheendev",
+          icon: "mdi:linkedin",
+          color: "#0077b5",
+        },
+        {
+          name: "X",
+          url: "https://x.com/lasheendev",
+          icon: "fa6-brands:x-twitter",
+          color: "#000000",
+        },
+        {
+          name: "Instagram",
+          url: "https://www.instagram.com/lasheen.dev/",
+          icon: "ant-design:instagram-filled",
+          color: "#e1306c",
+        },
+        {
+          name: "Facebook",
+          url: "https://www.facebook.com/lasheen.dev/",
+          icon: "mdi:facebook",
+          color: "#3b5998",
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/lasheendev",
+          icon: "mdi:github",
+          color: "#333333",
+        },
+      ],
     },
     {
-      name: "Twitter",
-      url: "https://x.com/lasheendev",
-      icon: "fa6-brands:square-x-twitter",
-      color: "#ffffff",
-    },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/lasheen.dev/",
-      icon: "ant-design:instagram-filled",
-      color: "#e1306c",
-    },
-    {
-      name: "LinkedIn",
-      url: "https://www.linkedin.com/company/lasheendev",
-      icon: "mdi:linkedin",
-      color: "#0077b5",
+      title: "Youssef",
+      description: "My own profiles, code and open-source work.",
+      links: [
+        {
+          name: "LinkedIn",
+          url: "https://linkedin.com/in/yousseflasheen",
+          icon: "mdi:linkedin",
+          color: "#0077b5",
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/YoussefLasheen",
+          icon: "mdi:github",
+          color: "#333333",
+        },
+      ],
     },
   ];
 </script>
@@ -33,7 +63,7 @@
   <title>Contact | Youssef Lasheen</title>
   <meta
     name="description"
-    content="Get in touch with Youssef Lasheen about a freelance project, a role, or anything else."
+    content="Start a project with lasheen.dev, or get in touch with Youssef Lasheen."
   />
 </svelte:head>
 
@@ -45,29 +75,28 @@
       Email me at <a href="mailto:youssef@lasheen.dev">youssef@lasheen.dev</a>.
       I reply within 2 business days.
     </p>
-    <p class="personal">
-      You can also find me on
-      <a href="https://linkedin.com/in/yousseflasheen">LinkedIn</a> and
-      <a href="https://github.com/YoussefLasheen">GitHub</a>. lasheen.dev is on
-      the networks below.
-    </p>
   </header>
 
-  <div class="button-container">
-    {#each socialMediaLinks as { name, url, icon, color }}
-      <a
-        class="button"
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        style="background-color: {color}; --color: {color};"
-      >
-        <div id="customicon">
-          <Icon {icon} />
-        </div>
-      </a>
-    {/each}
-  </div>
+  {#each groups as group}
+    <section class="group">
+      <h3>{group.title}</h3>
+      <p class="description">{group.description}</p>
+      <div class="links">
+        {#each group.links as { name, url, icon, color }}
+          <a
+            class="link"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style="--color: {color};"
+          >
+            <Icon {icon} />
+            <span>{name}</span>
+          </a>
+        {/each}
+      </div>
+    </section>
+  {/each}
 </div>
 
 <style lang="scss">
@@ -83,9 +112,6 @@
 
     p {
       line-height: 1.8;
-      & + p {
-        margin-top: 0.75rem;
-      }
     }
 
     a {
@@ -96,48 +122,48 @@
     }
   }
 
-  .button-container {
-    padding-top: 50px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 200px 200px 200px 200px;
-    justify-content: center;
-  }
+  .group {
+    margin-top: 3rem;
 
-  @media (max-width: $desktop) {
-    .button-container {
-      grid-template-columns: 200px 200px;
+    h3 {
+      color: $clr-fg-2;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .description {
+      margin-top: 0.25rem;
+      color: $clr-fg-4;
+      font-size: 0.9rem;
     }
   }
 
-  @media (max-width: $tablet) {
-    .button-container {
-      grid-template-columns: 200px 200px;
-    }
-  }
-  @media (max-width: $mobile) {
-    .button-container {
-      grid-template-columns: 200px;
-    }
-  }
-
-  .button {
-    aspect-ratio: 1;
+  .links {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .link {
+    display: inline-flex;
     align-items: center;
-    font-size: 5rem;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: box-shadow 0.3s ease-in-out;
-  }
+    gap: 0.6rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.6rem;
+    background: var(--color);
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: box-shadow 0.2s ease-in-out;
 
-  .button:hover {
-    box-shadow: 0 0 20px var(--color);
-  }
+    :global(svg) {
+      font-size: 1.4rem;
+    }
 
-  #customicon {
-    display: flex;
-    color: $bg;
+    &:hover {
+      color: #fff;
+      box-shadow: 0 0 16px var(--color);
+    }
   }
 </style>
