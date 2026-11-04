@@ -205,6 +205,33 @@
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
+          "url": "https://github.com/lasheendev/macos_tabbar"
+        },
+        {
+          "color": "black",
+          "icon": "simple-icons:dart",
+          "id": "pub.dev",
+          "url": "https://pub.dev/packages/macos_tabbar"
+        }
+      ],
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/macos_tabbar.png?raw=true",
+      "date": "2025-05-10",
+      "category": "personal",
+      "id": "macos_tabbar",
+      "shortDescription": "macOS-style tab bar for Flutter",
+      "tags": [
+        "Desktop",
+        "Flutter",
+        "Plugin"
+      ],
+      "title": "macos_tabbar"
+    },
+    {
+      "access": [
+        {
+          "color": "#23863778",
+          "icon": "mdi:github",
+          "id": "Github",
           "url": "https://github.com/YoussefLasheen/qr"
         },
         {
