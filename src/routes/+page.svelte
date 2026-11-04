@@ -30,7 +30,7 @@
   <meta name="title" content="Youssef Lasheen | Mobile App Developer" />
   <meta
     name="description"
-    content="I'm Youssef Lasheen, a Flutter and SwiftUI developer in Cairo. I've shipped 10+ apps and packages, and through lasheen.dev I take on select freelance projects."
+    content="I'm Youssef Lasheen, a Flutter and SwiftUI developer in Cairo. I've shipped 10+ apps and packages, and through lasheen.dev, my product studio, I build complete apps for clients."
   />
 </svelte:head>
 
@@ -39,12 +39,12 @@
   <h1>Hi, I'm Youssef.<br />I build mobile apps.</h1>
   <p class="lede">
     I'm a Flutter and SwiftUI developer based in Cairo. By day I lead app
-    development at Simply Nikah. Through lasheen.dev, my independent studio, I
-    take on a few freelance projects alongside it.
+    development at Simply Nikah. Through lasheen.dev, my product studio, I
+    build complete apps for clients, from first idea to launch and beyond.
   </p>
   <div class="row">
     <a href="/projects" class="btn primary">See my work</a>
-    <a href="#work-with-me" class="btn secondary">Work with me</a>
+    <a href="#work-with-me" class="btn secondary">Start a project</a>
     <a href="https://resume.lasheen.dev" class="text-link">Resume →</a>
   </div>
 
@@ -73,22 +73,34 @@
 <section id="work-with-me">
   <div class="panel">
     <article>
-      <h2>Work with me</h2>
+      <h2>Work with lasheen.dev</h2>
       <p>
-        I take on a small number of freelance projects alongside my full-time
-        role. Keeping the list short means each one gets my full attention, and
-        you work directly with the person writing the code.
+        lasheen.dev is a product studio led by me. You get a complete product
+        and one point of contact: I lead every project personally, and bring in
+        specialists when a project needs them.
       </p>
 
-      <h3>What I build</h3>
+      <h3>What we deliver</h3>
       <ul>
         <li>
           <strong>Mobile apps</strong>: iOS and Android with Flutter or
-          SwiftUI, from first idea to App Store and Play Store launch.
+          SwiftUI.
         </li>
         <li>
-          <strong>Desktop and web</strong>: Linux desktop apps, Flutter web
-          and websites.
+          <strong>Backend and APIs</strong>: Firebase, AWS Amplify, REST and
+          GraphQL.
+        </li>
+        <li>
+          <strong>Web and desktop</strong>: websites, admin dashboards and
+          Linux desktop apps.
+        </li>
+        <li>
+          <strong>UI/UX design</strong>: from wireframes to a polished
+          interface.
+        </li>
+        <li>
+          <strong>Launch and beyond</strong>: App Store and Play Store
+          publishing, then updates and maintenance after launch.
         </li>
       </ul>
 
@@ -96,7 +108,7 @@
       <ol>
         <li>Tell me about your idea. The first call is free.</li>
         <li>I reply with a scope and a quote within 2 business days.</li>
-        <li>We build, test and launch it together.</li>
+        <li>We design, build, test and launch it together.</li>
       </ol>
 
       <p class="note">Discounted rates for non-profits.</p>

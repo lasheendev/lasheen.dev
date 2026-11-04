@@ -2,7 +2,7 @@
   <title>About | Youssef Lasheen</title>
   <meta
     name="description"
-    content="About Youssef Lasheen: Flutter and SwiftUI developer in Cairo, lead app developer at Simply Nikah, and the person behind lasheen.dev."
+    content="About Youssef Lasheen: Flutter and SwiftUI developer in Cairo, lead app developer at Simply Nikah, and founder of the lasheen.dev product studio."
   />
 </svelte:head>
 
@@ -26,10 +26,11 @@
   </p>
 
   <p>
-    lasheen.dev is my independent studio. It's just me: when you hire
-    lasheen.dev, you work directly with the person designing and writing your
-    app. I take on a few freelance projects at a time alongside my full-time
-    role.
+    lasheen.dev is my product studio. Clients get a complete solution, from
+    design and backend to launch and maintenance, with me as their one point of
+    contact. I lead every project personally and bring in specialists when a
+    project needs them, and I keep the number of projects small so each one
+    gets real attention.
   </p>
 
   <p>
