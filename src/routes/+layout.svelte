@@ -1,26 +1,35 @@
 <script>
+  import "@fontsource-variable/inter";
+  import "@fontsource-variable/bricolage-grotesque";
   import "../styles/app.scss";
+  import { page } from "$app/stores";
   import Nav from "$lib/Navbar.svelte";
+  import Footer from "$lib/Footer.svelte";
+
+  // Pages under /projects/<app> are plain privacy policies.
+  $: isLegalPage = /^\/projects\/.+/.test($page.url.pathname);
 </script>
 
 <Nav />
-<main>
+<main class:prose={isLegalPage}>
   <slot />
 </main>
+<Footer />
 
 <style lang="scss">
   main {
-    padding: 1.4rem 2rem 2rem 1rem;
-    margin-left: 4.8rem;
-    margin-top: 4.2rem;
+    max-width: $content-width;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 0;
+
+    &.prose {
+      max-width: calc(44rem + 3rem);
+    }
   }
 
-  @media only screen and (max-width: $tablet) {
+  @media (max-width: $tablet) {
     main {
-      width: 100%;
-      margin: 0;
-      margin-top: 4rem;
-      padding: 4vh 5vw 12vh 5vw;
+      padding: 2rem 1rem 0;
     }
   }
 </style>

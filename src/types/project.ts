@@ -14,6 +14,7 @@ export interface Project {
 }
 
 export interface ProjectAccess {
+  id: string;
   color: string;
   url: string;
   icon: string;

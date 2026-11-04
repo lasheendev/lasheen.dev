@@ -46,7 +46,7 @@
   </p>
 
   <div class="links">
-    <a href="https://resume.lasheen.dev" class="btn">View my resume</a>
+    <a href="https://resume.lasheen.dev" class="btn primary">View my resume</a>
     <a href="/contact" class="btn secondary">Get in touch</a>
   </div>
 
@@ -62,24 +62,17 @@
   }
 
   h1 {
-    color: $clr-fg-1;
     font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 1.5rem;
   }
 
   p {
-    line-height: 1.8;
-    color: $clr-fg-3;
+    color: $text-muted;
+    font-size: 1.05rem;
+    line-height: 1.75;
     & + p {
       margin-top: 1.25rem;
-    }
-  }
-
-  a {
-    color: $accent-0;
-    &:hover {
-      color: $clr-fg-1;
     }
   }
 
@@ -90,25 +83,9 @@
     margin-top: 2.5rem;
   }
 
-  .btn {
-    padding: 0.9rem 1.6rem;
-    border-radius: 0.5rem;
-    background: $accent-1;
-    color: $clr-fg-1;
-    font-size: 0.9rem;
-    font-weight: 600;
-    &.secondary {
-      background: $clr-bg-350;
-    }
-    &:hover {
-      color: $clr-fg-1;
-      filter: brightness(1.2);
-    }
-  }
-
   .colophon {
     margin-top: 3rem;
     font-size: 0.85rem;
-    color: $clr-fg-450;
+    color: $text-subtle;
   }
 </style>

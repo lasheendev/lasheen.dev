@@ -47,6 +47,9 @@
 
 <section class="latest">
   <h2>Projects</h2>
+  <p class="intro">
+    Apps for clients and employers, plus my own apps and open-source packages.
+  </p>
   <FilterChips {filters} bind:selectedFilters />
   {#if loading}
     <div class="no-results">Loading projects…</div>
@@ -61,33 +64,19 @@
 
 <style lang="scss">
   .latest h2 {
-    font-size: 3rem;
-    //margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: $clr-fg-2;
-    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
   }
 
-  // Tablet and smaller devices
-  @media screen and (max-width: $tablet) {
-    h2 {
-      font-size: 1.3rem;
-      color: $clr-fg-2;
-      font-weight: 400;
-    }
+  .intro {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    color: $text-muted;
   }
 
   .no-results {
-    text-align: center;
-    padding: 2rem;
-    color: $clr-fg-2;
-    font-size: 1.2rem;
-  }
-
-  @media screen and (max-width: $tablet) {
-    .no-results {
-      font-size: 1rem;
-      padding: 1rem;
-    }
+    padding: 2rem 0;
+    color: $text-muted;
   }
 </style>
