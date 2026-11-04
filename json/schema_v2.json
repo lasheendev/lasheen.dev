@@ -14,7 +14,7 @@
         "description": "List of projects",
         "items": {
           "type": "object",
-          "required": ["id", "title", "shortDescription", "date", "tags", "access"],
+          "required": ["id", "title", "shortDescription", "date", "category", "tags", "access"],
           "properties": {
             "id": {
               "type": "string",
@@ -32,6 +32,20 @@
               "type": "string",
               "description": "Project release date (YYYY-MM-DD)",
               "format": "date"
+            },
+            "category": {
+              "type": "string",
+              "enum": ["client", "employment", "personal"],
+              "description": "client: built for a client through lasheen.dev; employment: built in a full-time job; personal: my own apps and open source"
+            },
+            "employer": {
+              "type": "string",
+              "description": "Company name, for employment projects"
+            },
+            "status": {
+              "type": "string",
+              "enum": ["live", "discontinued"],
+              "description": "discontinued: no longer available in the stores (defaults to live)"
             },
             "tags": {
               "type": "array",

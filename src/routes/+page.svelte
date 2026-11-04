@@ -1,12 +1,16 @@
 <script lang="ts">
-  import { onMount } from "svelte";
   import Icon from "@iconify/svelte";
   import ProjectsGrid from "$lib/projects/ProjectsGrid.svelte";
-  import { fetchProjects } from "$lib/projects/fetchProjects";
+  import { projects } from "$lib/projects/projects";
   import type { Project } from "../types/project";
 
   // Shown on the home page, in this order. The rest live on /projects.
-  const featuredIds = ["simplynikah", "2go", "surelight-express"];
+  // Each card is labeled as client work, a full-time role or personal.
+  const featuredIds = ["simplynikah", "wtc", "harmony"];
+
+  const featured = featuredIds
+    .map((id) => projects.find((project) => project.id === id))
+    .filter((project): project is Project => project !== undefined);
 
   const services = [
     {
@@ -51,21 +55,6 @@
     },
   ];
 
-  let featured: Project[] = [];
-
-  onMount(async () => {
-    try {
-      const projects = await fetchProjects();
-      featured = featuredIds
-        .map((id) => projects.find((project) => project.id === id))
-        .filter((project): project is Project => project !== undefined);
-    } catch (error: unknown) {
-      console.error(
-        "Error fetching projects:",
-        error instanceof Error ? error.message : error,
-      );
-    }
-  });
 </script>
 
 <svelte:head>
@@ -112,14 +101,7 @@
     <h2>Selected work</h2>
     <a href="/projects" class="text-link">All projects →</a>
   </header>
-  {#if featured.length > 0}
-    <ProjectsGrid projects={featured} />
-  {:else}
-    <p class="muted">
-      Loading projects… If nothing shows up, <a href="/projects">see them all</a
-      >.
-    </p>
-  {/if}
+  <ProjectsGrid projects={featured} />
 </section>
 
 <section class="section" id="services">
@@ -259,10 +241,6 @@
         font-size: 1.05rem;
       }
     }
-  }
-
-  .muted {
-    color: $text-muted;
   }
 
   .services {

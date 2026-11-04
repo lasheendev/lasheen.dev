@@ -1,69 +1,60 @@
 <script lang="ts">
   import ProjectsGrid from "$lib/projects/ProjectsGrid.svelte";
   import FilterChips from "$lib/projects/FilterChips.svelte";
-  import { onMount } from "svelte";
-  import { fetchProjects } from "$lib/projects/fetchProjects";
+  import { projects, categories } from "$lib/projects/projects";
   import type { Project } from "../../types/project";
 
-  let latestProjects: Project[] = [];
-  let filteredProjects: Project[] = [];
-  let filters: string[] = [];
+  const filters = [...new Set(projects.flatMap((project) => project.tags))];
   let selectedFilters: string[] = [];
-  let loading = true;
 
-  $: {
-    filteredProjects =
-      selectedFilters.length > 0
-        ? latestProjects.filter((project: Project) =>
-            selectedFilters.every((filter: string) => 
-              project.tags.includes(filter)
-            ),
-          )
-        : latestProjects;
-  }
+  $: filteredProjects =
+    selectedFilters.length > 0
+      ? projects.filter((project: Project) =>
+          selectedFilters.every((filter) => project.tags.includes(filter)),
+        )
+      : projects;
 
-  onMount(async () => {
-    try {
-      latestProjects = await fetchProjects();
-      filters = [...new Set(latestProjects.flatMap((project) => project.tags))];
-    } catch (error: unknown) {
-      console.error(
-        "Error fetching projects:",
-        error instanceof Error ? error.message : error,
-      );
-    } finally {
-      loading = false;
-    }
-  });
+  $: sections = categories
+    .map((category) => ({
+      ...category,
+      projects: filteredProjects.filter((p) => p.category === category.id),
+    }))
+    .filter((section) => section.projects.length > 0);
 </script>
 
 <svelte:head>
   <title>Projects | Youssef Lasheen</title>
   <meta
     name="description"
-    content="Apps and packages built by Youssef Lasheen: mobile apps on the App Store and Play Store, Linux desktop apps, and open-source Flutter packages."
+    content="Client work by lasheen.dev, apps from Youssef Lasheen's full-time roles, and his own apps and open-source Flutter packages."
   />
 </svelte:head>
 
 <section class="latest">
-  <h2>Projects</h2>
+  <h1>Projects</h1>
   <p class="intro">
-    Apps for clients and employers, plus my own apps and open-source packages.
+    Client work through lasheen.dev, apps from my full-time roles, and my own
+    apps and open-source packages.
   </p>
   <FilterChips {filters} bind:selectedFilters />
-  {#if loading}
-    <div class="no-results">Loading projects…</div>
-  {:else if filteredProjects.length > 0}
-    <ProjectsGrid projects={filteredProjects} />
+
+  {#each sections as section (section.id)}
+    <section class="group" aria-labelledby="group-{section.id}">
+      <header>
+        <h2 id="group-{section.id}">{section.title}</h2>
+        <p>{section.description}</p>
+      </header>
+      <ProjectsGrid projects={section.projects} />
+    </section>
   {:else}
-    <div class="no-results">
-      No projects found with selected filters. Please adjust your selection.
-    </div>
-  {/if}
+    <p class="no-results">
+      No projects match the selected filters. Try removing one.
+    </p>
+  {/each}
 </section>
 
 <style lang="scss">
-  .latest h2 {
+  h1 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -73,6 +64,24 @@
     max-width: 40rem;
     margin-bottom: 2rem;
     color: $text-muted;
+  }
+
+  .group {
+    margin-top: 3.5rem;
+
+    header {
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 0.25rem;
+      color: $text-muted;
+    }
   }
 
   .no-results {

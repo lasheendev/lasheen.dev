@@ -18,37 +18,27 @@
       ],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/sn.png?raw=true",
       "date": "2024-05-14",
+      "category": "employment",
+      "employer": "Simply Nikah",
       "id": "simplynikah",
       "shortDescription": "Muslim Matrimonial app",
       "tags": [
         "Flutter",
-        "Full-Time",
         "Mobile"
       ],
       "title": "Simply Nikah"
     },
     {
-      "access": [
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore-Driver",
-          "url": "https://play.google.com/store/apps/details?id=com.togo.driverApp"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore-Rider",
-          "url": "https://play.google.com/store/apps/details?id=com.inweb.togo"
-        }
-      ],
+      "access": [],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/2go.png?raw=true",
       "date": "2022-07-15",
+      "category": "employment",
+      "employer": "Intelligent Web",
+      "status": "discontinued",
       "id": "2go",
       "shortDescription": "Local Taxi app",
       "tags": [
         "Flutter",
-        "Full-Time",
         "Mobile"
       ],
       "title": "2GO Rider/Driver"
@@ -69,10 +59,10 @@
         }
       ],
       "date": "2023-06-26",
+      "category": "personal",
       "id": "lasheen.dev",
       "shortDescription": "Personal Portfolio",
       "tags": [
-        "Personal",
         "Svelte",
         "Web"
       ],
@@ -85,27 +75,16 @@
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/ussd"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore-Etisalat",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.etisalat"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore-Orange",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.ussd.orange"
         }
       ],
       "date": "2023-07-16",
+      "category": "personal",
+      "status": "discontinued",
       "id": "ussd",
       "shortDescription": "Phone USSD Codes",
       "tags": [
         "Flutter",
-        "Mobile",
-        "Personal"
+        "Mobile"
       ],
       "title": "USSD Codes"
     },
@@ -116,21 +95,16 @@
           "icon": "mdi:github",
           "id": "Github",
           "url": "https://github.com/YoussefLasheen/surelight"
-        },
-        {
-          "color": "black",
-          "icon": "ion:logo-google-playstore",
-          "id": "Playstore",
-          "url": "https://play.google.com/store/apps/details?id=dev.lasheen.surelight.express"
         }
       ],
       "date": "2023-09-12",
+      "category": "client",
+      "status": "discontinued",
       "id": "surelight-express",
       "shortDescription": "DMX Control app",
       "tags": [
         "Flutter",
-        "Mobile",
-        "Freelance"
+        "Mobile"
       ],
       "title": "Surelight Express"
     },
@@ -138,10 +112,10 @@
       "access": [],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/wtc.png?raw=true",
       "date": "2023-04-22",
+      "category": "client",
       "id": "wtc",
       "shortDescription": "PDF Helper app",
       "tags": [
-        "Freelance",
         "Mobile",
         "Flutter"
       ],
@@ -149,12 +123,6 @@
     },
     {
       "access": [
-        {
-          "color": "black",
-          "icon": "simple-icons:appstore",
-          "id": "Appstore",
-          "url": "https://apps.apple.com/us/app/intimate-ai-girlfriend-chat/id6449442465"
-        },
         {
           "color": "black",
           "icon": "ion:logo-google-playstore",
@@ -170,6 +138,7 @@
       ],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/intimate.png?raw=true",
       "date": "2023-07-15",
+      "category": "client",
       "id": "intimate",
       "shortDescription": "AI dating simulator",
       "tags": [
@@ -196,12 +165,12 @@
       ],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/harmony.png?raw=true",
       "date": "2023-02-11",
+      "category": "personal",
       "id": "harmony",
       "shortDescription": "Keyboard simulator",
       "tags": [
         "Desktop",
         "Flutter",
-        "Personal",
         "UI/UX"
       ],
       "title": "Harmony"
@@ -222,11 +191,11 @@
         }
       ],
       "date": "2019-04-28",
+      "category": "personal",
       "id": "flurry",
       "shortDescription": "A flutter package",
       "tags": [
         "Flutter",
-        "Personal",
         "Plugin"
       ],
       "title": "flurry_navigation"
@@ -248,12 +217,12 @@
       ],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/header.png?raw=true",
       "date": "2022-12-10",
+      "category": "personal",
       "id": "gtk_window",
       "shortDescription": "Header for GTK",
       "tags": [
         "Desktop",
-        "Flutter",
-        "Personal"
+        "Flutter"
       ],
       "title": "gtk_window"
     },
@@ -274,13 +243,13 @@
       ],
       "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/qr.png?raw=true",
       "date": "2022-12-05",
+      "category": "personal",
       "id": "qr",
       "shortDescription": "QRcode Scanner and generator",
       "tags": [
         "Desktop",
         "Flutter",
-        "Mobile",
-        "Personal"
+        "Mobile"
       ],
       "title": "QR"
     }
