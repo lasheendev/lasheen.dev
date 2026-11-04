@@ -15,6 +15,17 @@
   };
 
   // "Playstore-Driver" -> "Google Play (Driver)"
+  const categoryLabel = {
+    client: "Client project",
+    employment: "Full-time role",
+    personal: "Personal",
+  };
+
+  $: badge =
+    project.category === "employment" && project.employer
+      ? `Full-time · ${project.employer}`
+      : categoryLabel[project.category];
+
   const label = (id: string) => {
     if (labels[id]) return labels[id];
     const [base, variant] = id.split("-");
@@ -35,6 +46,7 @@
     {/if}
   </div>
   <div class="card-info">
+    <p class="badge" data-category={project.category}>{badge}</p>
     <h3 class="card-title">{project.title}</h3>
     <p class="card-text">{project.shortDescription}</p>
 
@@ -44,6 +56,10 @@
           <li>{tag}</li>
         {/each}
       </ul>
+    {/if}
+
+    {#if project.status === "discontinued"}
+      <p class="status">No longer on the stores</p>
     {/if}
 
     {#if project.access?.length}
@@ -79,15 +95,18 @@
   }
 
   .card-image {
+    position: relative;
     aspect-ratio: 16 / 10;
+    overflow: hidden;
     background: $surface-muted;
     border-bottom: 1px solid $border;
 
     img {
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
     }
   }
 
@@ -110,6 +129,33 @@
     display: flex;
     flex-direction: column;
     padding: 1.25rem;
+  }
+
+  .badge {
+    align-self: flex-start;
+    margin-bottom: 0.6rem;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: $accent-soft;
+    color: $accent;
+
+    &[data-category="employment"] {
+      background: #e7f3ec;
+      color: #1d6b40;
+    }
+
+    &[data-category="personal"] {
+      background: $surface-muted;
+      color: $text-muted;
+    }
+  }
+
+  .status {
+    margin-top: 0.9rem;
+    font-size: 0.85rem;
+    color: $text-subtle;
   }
 
   .card-title {

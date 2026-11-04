@@ -1,15 +1,18 @@
+export type ProjectCategory = "client" | "employment" | "personal";
+
 export interface Project {
   id: string;
   title: string;
   shortDescription: string;
-  longDescription: string;
-  role: string;
-  client: string;
-  date: Date;
+  longDescription?: string;
+  date: string;
+  category: ProjectCategory;
+  // Company name, for employment projects.
+  employer?: string;
+  // "discontinued" means the app is no longer in the stores.
+  status?: "live" | "discontinued";
   tags: string[];
   backgroundImageSource?: string;
-  order: number;
-  credits: string;
   access: ProjectAccess[];
 }
 
