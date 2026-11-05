@@ -46,7 +46,7 @@
   </p>
 
   <div class="links">
-    <a href="https://resume.lasheen.dev" class="btn primary">View my resume</a>
+    <a href="/resume" class="btn primary">View my resume</a>
     <a href="/contact" class="btn secondary">Get in touch</a>
   </div>
 

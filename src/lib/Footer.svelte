@@ -12,7 +12,7 @@
       <a href="mailto:youssef@lasheen.dev">Email</a>
       <a href="https://linkedin.com/in/yousseflasheen">LinkedIn</a>
       <a href="https://github.com/YoussefLasheen">GitHub</a>
-      <a href="https://resume.lasheen.dev">Resume</a>
+      <a href="/resume">Resume</a>
     </nav>
     <p class="copy">© {year} Youssef Lasheen</p>
   </div>
