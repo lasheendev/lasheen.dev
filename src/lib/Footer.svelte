@@ -8,6 +8,7 @@
       <strong>lasheen.dev</strong> · Product studio by Youssef Lasheen, Cairo
     </p>
     <nav aria-label="Footer">
+      <a href="/blog/">Blog</a>
       <a href="mailto:youssef@lasheen.dev">Email</a>
       <a href="https://linkedin.com/in/yousseflasheen">LinkedIn</a>
       <a href="https://github.com/YoussefLasheen">GitHub</a>
