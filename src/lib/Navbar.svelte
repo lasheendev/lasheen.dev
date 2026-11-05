@@ -45,7 +45,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(250, 249, 247, 0.85);
+    background: rgba(245, 247, 250, 0.85);
     backdrop-filter: saturate(180%) blur(12px);
     -webkit-backdrop-filter: saturate(180%) blur(12px);
     border-bottom: 1px solid $border;
@@ -78,7 +78,7 @@
     }
 
     .wordmark span {
-      color: $accent;
+      color: $highlight;
     }
 
     &:hover {

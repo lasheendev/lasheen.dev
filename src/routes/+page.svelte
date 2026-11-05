@@ -157,7 +157,7 @@
   }
 
   .eyebrow {
-    color: $accent;
+    color: $highlight;
     font-weight: 600;
     font-size: 0.9rem;
     letter-spacing: 0.02em;
@@ -166,12 +166,12 @@
 
   h1 {
     font-size: clamp(2.6rem, 7vw, 5rem);
-    font-weight: 700;
+    font-weight: 800;
     line-height: 1.02;
     letter-spacing: -0.035em;
 
     span {
-      color: $accent;
+      color: $highlight;
     }
   }
 
@@ -274,7 +274,7 @@
     padding: 0.6rem;
     border-radius: 0.65rem;
     background: $accent-soft;
-    color: $accent;
+    color: $highlight;
     font-size: 1.4rem;
   }
 
@@ -306,7 +306,7 @@
     border: 1px solid $border;
     background: $surface;
     font-weight: 700;
-    color: $accent;
+    color: $highlight;
   }
 
   .cta {
