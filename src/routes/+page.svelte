@@ -1,4 +1,13 @@
 <script lang="ts">
+  export let data;
+
+  const formatDate = (iso: string) =>
+    new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", {
+      month: "short",
+      year: "numeric",
+      timeZone: "UTC",
+    });
+
   import Icon from "@iconify/svelte";
   import ProjectsGrid from "$lib/projects/ProjectsGrid.svelte";
   import { projects } from "$lib/projects/projects";
@@ -138,6 +147,24 @@
       </li>
     {/each}
   </ol>
+</section>
+
+<section class="section" id="blog">
+  <header class="section-head">
+    <h2>From the blog</h2>
+    <a href="/blog/" class="text-link">All posts →</a>
+  </header>
+  <ul class="blog-posts">
+    {#each data.blogPosts as post (post.slug)}
+      <li>
+        <a href="/blog/{post.slug}/">
+          <span class="blog-meta"><time datetime={post.date}>{formatDate(post.date)}</time> · {post.readingMinutes} min read</span>
+          <h3>{post.title}</h3>
+          <p>{post.description}</p>
+        </a>
+      </li>
+    {/each}
+  </ul>
 </section>
 
 <section class="cta">
@@ -307,6 +334,56 @@
     background: $surface;
     font-weight: 700;
     color: $highlight;
+  }
+
+  .blog-posts {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    gap: 1rem;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 1.4rem;
+      background: $surface;
+      border: 1px solid $border;
+      border-radius: $radius;
+      color: $text;
+      transition: border-color 0.15s ease;
+
+      &:hover {
+        border-color: $text-subtle;
+
+        h3 {
+          color: $highlight;
+        }
+      }
+    }
+
+    .blog-meta {
+      font-size: 0.85rem;
+      color: $text-subtle;
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: color 0.15s ease;
+    }
+
+    p {
+      margin-top: 0.4rem;
+      color: $text-muted;
+      font-size: 0.95rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 
   .cta {
