@@ -86,7 +86,7 @@
   <div class="actions">
     <a href="/contact" class="btn primary">Start a project</a>
     <a href="/projects" class="btn secondary">See my work</a>
-    <a href="https://resume.lasheen.dev" class="text-link">Resume →</a>
+    <a href="/resume" class="text-link">Resume →</a>
   </div>
 
   <dl class="facts">

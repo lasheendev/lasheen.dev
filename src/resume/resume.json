@@ -1,0 +1,212 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Youssef Lasheen",
+    "label": "Mobile Developer · Flutter & SwiftUI",
+    "image": "",
+    "email": "youssef@lasheen.dev",
+    "phone": "+201012845227",
+    "url": "https://lasheen.dev",
+    "summary": "Mobile developer leading app development at Simply Nikah. I've shipped 10+ apps and packages to the App Store, Google Play, Snapcraft and pub.dev, and through lasheen.dev, my product studio, I build complete apps for clients, from first idea to launch.",
+    "location": {
+      "city": "Shorouk City",
+      "region": "Cairo",
+      "countryCode": "EG"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "yousseflasheen",
+        "url": "https://github.com/yousseflasheen"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "yousseflasheen",
+        "url": "https://linkedin.com/in/yousseflasheen"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Simply Nikah",
+      "location": "Cairo, Egypt",
+      "description": "Muslim matrimonial app on the App Store and Google Play",
+      "position": "Flutter Developer / Product Manager",
+      "url": "https://apps.apple.com/us/app/simply-nikah/id6471347083",
+      "startDate": "2023-09",
+      "summary": "Lead app development for Simply Nikah, as both developer and product manager.",
+      "highlights": [
+        "Built and launched the Simply Nikah app for iOS and Android with Flutter.",
+        "Own the product side as well as the code: planning features and shipping releases to both stores."
+      ]
+    },
+    {
+      "name": "Intelligent Web",
+      "location": "Cairo, Egypt",
+      "position": "Flutter Developer / Product Manager",
+      "startDate": "2022-10",
+      "endDate": "2023-09",
+      "summary": "Managed and launched multiple client projects as developer and product manager.",
+      "highlights": [
+        "Built and launched the 2GO taxi apps, separate rider and driver apps for Android, with Flutter.",
+        "Managed and launched Stbtr Academy."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "flurry_navigation",
+      "type": "Open-source Flutter package",
+      "startDate": "2019-04",
+      "description": "Animated navigation package for Flutter, published on pub.dev.",
+      "url": "https://pub.dev/packages/flurry_navigation",
+      "keywords": [
+        "Flutter",
+        "Dart",
+        "pub.dev"
+      ]
+    },
+    {
+      "name": "macos_tabbar",
+      "type": "Open-source Flutter package",
+      "startDate": "2025-05",
+      "description": "macOS-style tab bar widget for Flutter, published on pub.dev under the lasheen.dev publisher.",
+      "url": "https://pub.dev/packages/macos_tabbar",
+      "keywords": [
+        "Flutter",
+        "Desktop",
+        "pub.dev"
+      ]
+    },
+    {
+      "name": "gtk_window",
+      "type": "Open-source Flutter package",
+      "startDate": "2022-12",
+      "description": "GTK window header for Flutter Linux desktop apps, published on pub.dev.",
+      "url": "https://pub.dev/packages/gtk_window",
+      "keywords": [
+        "Flutter",
+        "Linux",
+        "GTK"
+      ]
+    },
+    {
+      "name": "Harmony",
+      "type": "Desktop app",
+      "startDate": "2023-02",
+      "description": "Keyboard simulator for the Linux desktop, built with Flutter and published on Snapcraft.",
+      "url": "https://snapcraft.io/harmony",
+      "keywords": [
+        "Flutter",
+        "Linux",
+        "Snapcraft"
+      ]
+    },
+    {
+      "name": "QR",
+      "type": "Desktop and mobile app",
+      "startDate": "2022-12",
+      "description": "QR code scanner and generator built with Flutter, published on Snapcraft.",
+      "url": "https://snapcraft.io/qr-scanner",
+      "keywords": [
+        "Flutter",
+        "Linux",
+        "Snapcraft"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Shorouk Academy",
+      "location": "Cairo, Egypt",
+      "area": "Computer Engineering",
+      "studyType": "B.Eng.",
+      "startDate": "2021-08",
+      "endDate": "2026-08",
+      "score": "Graduation project: Excellent · Final year: Very Good",
+      "courses": [
+        "Functional Programming",
+        "Object-Oriented Programming",
+        "Discrete Mathematics"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Mobile",
+      "keywords": [
+        "Flutter",
+        "Dart",
+        "SwiftUI",
+        "iOS",
+        "Android",
+        "App Store and Google Play publishing"
+      ]
+    },
+    {
+      "name": "Backend and APIs",
+      "keywords": [
+        "Firebase",
+        "AWS Amplify",
+        "REST",
+        "GraphQL",
+        "SOAP"
+      ]
+    },
+    {
+      "name": "Web and desktop",
+      "keywords": [
+        "Svelte",
+        "SvelteKit",
+        "Flutter for Linux desktop",
+        "GNU/Linux"
+      ]
+    },
+    {
+      "name": "Product",
+      "keywords": [
+        "Product management",
+        "UI/UX design"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Git",
+        "GitHub"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Bilingual"
+    },
+    {
+      "language": "Arabic",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Chinese",
+      "fluency": "Basic Reading"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Data Structures & Algorithms Nanodegree",
+      "issuer": "Udacity",
+      "date": "2020-05-01",
+      "url": "https://graduation-api.udacity.com/api/certificate/AHDRJH/download"
+    },
+    {
+      "name": "Machine Learning Engineer Nanodegree",
+      "issuer": "Udacity",
+      "date": "2020-04-01",
+      "url": "https://graduation-api.udacity.com/api/certificate/AAM6ESPH/download"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "lastModified": "2026-11-05T00:00:00"
+  }
+}
