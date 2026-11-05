@@ -1,26 +1,31 @@
-// Colors
-$bg: #faf9f7;
+// Colors: the "Harbour" identity (navy + sky).
+// Logo tubes: navy #16294d and sky #47b8f0 (see static/lasheen-logo.svg).
+$bg: #f5f7fa;
 $surface: #ffffff;
-$surface-muted: #f2f0ec;
-$border: #e6e3dd;
+$surface-muted: #eaeef4;
+$border: #dce2ec;
 
-$text: #16151a;
-$text-muted: #55535e;
-$text-subtle: #85838f;
+$text: #101b30;
+$text-muted: #4a5772;
+$text-subtle: #65718a;
 
-$accent: #5b3fd1;
-$accent-hover: #4a31b5;
-$accent-soft: #efebfd;
+// Navy: buttons and filled surfaces.
+$accent: #16294d;
+$accent-hover: #0e1c38;
 $on-accent: #ffffff;
+// Sky: the logo's sky, deepened so it passes contrast as text (links, highlights).
+$highlight: #1670ad;
+$sky: #47b8f0;
+$accent-soft: #e3f1fb;
 
 // Fonts
-$body-font: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
-$heading-font: "Bricolage Grotesque Variable", $body-font;
+$body-font: "Manrope Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+$heading-font: $body-font;
 
 // Layout
 $content-width: 72rem;
 $radius: 1rem;
-$shadow: 0 1px 2px rgba(22, 21, 26, 0.04), 0 8px 24px rgba(22, 21, 26, 0.06);
+$shadow: 0 1px 2px rgba(16, 27, 48, 0.05), 0 8px 24px rgba(16, 27, 48, 0.07);
 
 // Media queries
 $mobile: 420px;

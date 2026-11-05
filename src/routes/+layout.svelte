@@ -1,6 +1,5 @@
 <script>
-  import "@fontsource-variable/inter";
-  import "@fontsource-variable/bricolage-grotesque";
+  import "@fontsource-variable/manrope";
   import "../styles/app.scss";
   import { page } from "$app/stores";
   import Nav from "$lib/Navbar.svelte";
