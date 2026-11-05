@@ -16,7 +16,10 @@
 
 <header class="site-header">
   <nav class="bar" aria-label="Main">
-    <a href="/" class="logo">lasheen<span>.dev</span></a>
+    <a href="/" class="logo" aria-label="lasheen.dev home">
+      <img src="/lasheen-logo.svg" alt="" width="44" height="28" />
+      <span class="wordmark">lasheen<span>.dev</span></span>
+    </a>
 
     <button
       class="menu-toggle"
@@ -59,13 +62,22 @@
   }
 
   .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
     font-family: $heading-font;
     font-weight: 700;
     font-size: 1.25rem;
     letter-spacing: -0.02em;
     color: $text;
 
-    span {
+    img {
+      display: block;
+      height: 1.75rem;
+      width: auto;
+    }
+
+    .wordmark span {
       color: $accent;
     }
 
