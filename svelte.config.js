@@ -15,7 +15,8 @@ const config = {
   kit: {
     // The site is fully static (project data is fetched in the browser),
     // so every page is prerendered to plain HTML.
-    adapter: adapter(),
+    // fallback: a 404.html page that Cloudflare serves for unknown URLs.
+    adapter: adapter({ fallback: "404.html" }),
   },
 };
 
