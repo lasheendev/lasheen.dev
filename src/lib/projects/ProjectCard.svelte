@@ -61,6 +61,8 @@
 
     {#if project.status === "discontinued"}
       <p class="status">No longer on the stores</p>
+    {:else if project.status === "unreleased"}
+      <p class="status">Not released (project cancelled)</p>
     {/if}
 
     {#if project.access?.length}

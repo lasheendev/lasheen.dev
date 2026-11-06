@@ -116,6 +116,20 @@
       "title": "USSD Codes"
     },
     {
+      "access": [],
+      "backgroundImageSource": "/images/projects/viuz.webp",
+      "date": "2025-03-03",
+      "category": "client",
+      "status": "unreleased",
+      "id": "viuz",
+      "shortDescription": "Photo and video reviews of local spots",
+      "tags": [
+        "Flutter",
+        "Mobile"
+      ],
+      "title": "Viuz"
+    },
+    {
       "access": [
         {
           "color": "#23863778",

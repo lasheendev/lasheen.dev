@@ -9,8 +9,9 @@ export interface Project {
   category: ProjectCategory;
   // Company name, for employment projects.
   employer?: string;
-  // "discontinued" means the app is no longer in the stores.
-  status?: "live" | "discontinued";
+  // "discontinued" means the app is no longer in the stores; "unreleased"
+  // means it never shipped.
+  status?: "live" | "discontinued" | "unreleased";
   tags: string[];
   backgroundImageSource?: string;
   access: ProjectAccess[];
