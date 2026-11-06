@@ -32,8 +32,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource-variable/manrope": "^5.3.0",
-    "svelte-lazy-image": "^0.5.1"
+    "@fontsource-variable/manrope": "^5.3.0"
   },
   "engines": {
     "node": ">=22"
