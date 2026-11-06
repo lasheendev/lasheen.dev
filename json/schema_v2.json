@@ -60,6 +60,10 @@
               "description": "URL to project screenshot or logo image",
               "format": "uri"
             },
+            "page": {
+              "type": "string",
+              "description": "Path of a page on this site about the project (e.g. /projects/viuz); the card links to it"
+            },
             "access": {
               "type": "array",
               "description": "Links to access the project",

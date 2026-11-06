@@ -68,6 +68,20 @@
       ]
     },
     {
+      "name": "Viuz",
+      "type": "Client app",
+      "startDate": "2024-12",
+      "endDate": "2025-03",
+      "description": "Social app for photo and video reviews of local businesses, built for a client and cancelled before launch. Feeds, follows, comments, a map of business branches, and a business mode for managing branches and posts. Built with Flutter, Firebase (Auth, Data Connect, Cloud Functions, Storage) and Stream activity feeds.",
+      "url": "https://lasheen.dev/projects/viuz",
+      "keywords": [
+        "Flutter",
+        "Firebase",
+        "iOS",
+        "Android"
+      ]
+    },
+    {
       "name": "flurry_navigation",
       "type": "Open-source Flutter package",
       "startDate": "2019-04",
