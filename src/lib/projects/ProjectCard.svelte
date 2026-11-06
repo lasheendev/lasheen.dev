@@ -12,6 +12,7 @@
     Website: "Website",
     "pub.dev": "pub.dev",
     Snapcraft: "Snapcraft",
+    Android: "Android app",
   };
 
   // "Playstore-Driver" -> "Google Play (Driver)"
