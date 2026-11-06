@@ -14,6 +14,8 @@ export interface Project {
   status?: "live" | "discontinued" | "unreleased";
   tags: string[];
   backgroundImageSource?: string;
+  // Path of a page on this site about the project; the card links to it.
+  page?: string;
   access: ProjectAccess[];
 }
 

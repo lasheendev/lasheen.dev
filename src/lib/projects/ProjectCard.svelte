@@ -33,7 +33,7 @@
   };
 </script>
 
-<article class="card">
+<article class="card" class:linked={project.page}>
   <div class="card-image">
     {#if project.backgroundImageSource}
       <img
@@ -48,7 +48,13 @@
   </div>
   <div class="card-info">
     <p class="badge" data-category={project.category}>{badge}</p>
-    <h3 class="card-title">{project.title}</h3>
+    <h3 class="card-title">
+      {#if project.page}
+        <a href={project.page} class="card-link">{project.title}</a>
+      {:else}
+        {project.title}
+      {/if}
+    </h3>
     <p class="card-text">{project.shortDescription}</p>
 
     {#if project.tags}
@@ -63,6 +69,10 @@
       <p class="status">No longer on the stores</p>
     {:else if project.status === "unreleased"}
       <p class="status">Not released (project cancelled)</p>
+    {/if}
+
+    {#if project.page}
+      <p class="more" aria-hidden="true">Read the case study →</p>
     {/if}
 
     {#if project.access?.length}
@@ -80,6 +90,7 @@
 
 <style lang="scss">
   .card {
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -166,6 +177,50 @@
     font-weight: 600;
   }
 
+  // The title link covers the whole card, so the card is one big target.
+  .card-link {
+    color: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: $radius;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      &::after {
+        outline: 2px solid $highlight;
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  .more {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $highlight;
+  }
+
+  .linked .card-title {
+    transition: color 0.15s ease;
+  }
+
+  .linked {
+    @include hover {
+      .card-title {
+        color: $highlight;
+      }
+    }
+  }
+
   .card-text {
     margin-top: 0.35rem;
     color: $text-muted;
@@ -198,6 +253,9 @@
   }
 
   .action {
+    // Above the card-wide title link.
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
