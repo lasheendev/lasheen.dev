@@ -82,6 +82,20 @@
       ]
     },
     {
+      "name": "My Petrojet",
+      "type": "Client app",
+      "startDate": "2023-04",
+      "endDate": "2023-04",
+      "description": "Vacation booking app for Petrojet's PR department, cancelled before the backend was built. Employees browse company trips, add their family members as guests, arrange them into rooms and see the price after the company's contribution. Built with Flutter in Arabic and English.",
+      "url": "https://lasheen.dev/projects/petrojet",
+      "keywords": [
+        "Flutter",
+        "Riverpod",
+        "Arabic",
+        "Android"
+      ]
+    },
+    {
       "name": "flurry_navigation",
       "type": "Open-source Flutter package",
       "startDate": "2019-04",
