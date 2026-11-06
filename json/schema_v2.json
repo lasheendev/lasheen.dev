@@ -44,8 +44,8 @@
             },
             "status": {
               "type": "string",
-              "enum": ["live", "discontinued"],
-              "description": "discontinued: no longer available in the stores (defaults to live)"
+              "enum": ["live", "discontinued", "unreleased"],
+              "description": "discontinued: no longer available in the stores; unreleased: never shipped (defaults to live)"
             },
             "tags": {
               "type": "array",
