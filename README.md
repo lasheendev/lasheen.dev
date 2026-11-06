@@ -2,7 +2,7 @@
 
 The personal site of Youssef Lasheen and his independent studio, lasheen.dev.
 
-Built with SvelteKit. Projects are listed in `json/projects_v2.json`.
+Built with SvelteKit. Projects are listed in `json/projects_v2.json`. Their preview images are WebP files in `static/images/projects/` (at most 960px wide), with the full-size originals in `images/`.
 
 Blog posts are Markdown files in `src/posts/` (images in `static/blog/<slug>/`), published at `/blog/<slug>/` with an RSS feed at `/blog/index.xml`.
 

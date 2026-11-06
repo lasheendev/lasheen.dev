@@ -16,7 +16,7 @@
           "url": "https://play.google.com/store/apps/details?id=com.simplynikah.app"
         }
       ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/sn.png?raw=true",
+      "backgroundImageSource": "/images/projects/sn.webp",
       "date": "2024-05-14",
       "category": "employment",
       "employer": "Simply Nikah",
@@ -30,7 +30,7 @@
     },
     {
       "access": [],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/2go.png?raw=true",
+      "backgroundImageSource": "/images/projects/2go.webp",
       "date": "2022-07-15",
       "category": "employment",
       "employer": "Intelligent Web",
@@ -58,7 +58,7 @@
           "url": "https://frenemi.es/android"
         }
       ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/frenemies.png?raw=true",
+      "backgroundImageSource": "/images/projects/frenemies.webp",
       "date": "2026-10-29",
       "category": "personal",
       "id": "frenemies",
@@ -137,7 +137,7 @@
     },
     {
       "access": [],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/wtc.png?raw=true",
+      "backgroundImageSource": "/images/projects/wtc.webp",
       "date": "2023-04-22",
       "category": "client",
       "id": "wtc",
@@ -163,7 +163,7 @@
           "url": "https://snapcraft.io/harmony"
         }
       ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/harmony.png?raw=true",
+      "backgroundImageSource": "/images/projects/harmony.webp",
       "date": "2023-02-11",
       "category": "personal",
       "id": "harmony",
@@ -215,7 +215,7 @@
           "url": "https://pub.dev/packages/gtk_window"
         }
       ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/header.png?raw=true",
+      "backgroundImageSource": "/images/projects/header.webp",
       "date": "2022-12-10",
       "category": "personal",
       "id": "gtk_window",
@@ -241,7 +241,7 @@
           "url": "https://pub.dev/packages/macos_tabbar"
         }
       ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/macos_tabbar.png?raw=true",
+      "backgroundImageSource": "/images/projects/macos_tabbar.webp",
       "date": "2025-05-10",
       "category": "personal",
       "id": "macos_tabbar",
@@ -268,7 +268,7 @@
           "url": "https://snapcraft.io/qr-scanner"
         }
       ],
-      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/qr.png?raw=true",
+      "backgroundImageSource": "/images/projects/qr.webp",
       "date": "2022-12-05",
       "category": "personal",
       "id": "qr",
