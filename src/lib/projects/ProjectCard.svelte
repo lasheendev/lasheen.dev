@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { useLazyImage as lazyImage } from "svelte-lazy-image";
   import Icon from "@iconify/svelte";
   import type { Project } from "../../types/project";
   export let project: Project;
@@ -38,9 +37,10 @@
   <div class="card-image">
     {#if project.backgroundImageSource}
       <img
-        data-src={project.backgroundImageSource}
+        src={project.backgroundImageSource}
         alt="{project.title} preview"
-        use:lazyImage={{ threshold: 0.5 }}
+        loading="lazy"
+        decoding="async"
       />
     {:else}
       <div class="placeholder" aria-hidden="true">{project.title}</div>

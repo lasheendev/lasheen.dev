@@ -15,7 +15,7 @@
 
   // Shown on the home page, in this order. The rest live on /projects.
   // Each card is labeled as client work, a full-time role or personal.
-  const featuredIds = ["simplynikah", "wtc", "harmony"];
+  const featuredIds = ["simplynikah", "wtc", "frenemies", "harmony"];
 
   const featured = featuredIds
     .map((id) => projects.find((project) => project.id === id))
@@ -110,7 +110,7 @@
     <h2>Selected work</h2>
     <a href="/projects" class="text-link">All projects →</a>
   </header>
-  <ProjectsGrid projects={featured} />
+  <ProjectsGrid projects={featured} wide />
 </section>
 
 <section class="section" id="services">
