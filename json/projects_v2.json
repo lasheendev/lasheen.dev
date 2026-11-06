@@ -46,6 +46,33 @@
     {
       "access": [
         {
+          "color": "#0f47b741",
+          "icon": "mdi:web",
+          "id": "Website",
+          "url": "https://frenemi.es/"
+        },
+        {
+          "color": "#3ddc8463",
+          "icon": "mdi:android",
+          "id": "Android",
+          "url": "https://frenemi.es/android"
+        }
+      ],
+      "backgroundImageSource": "https://github.com/lasheendev/lasheen.dev/blob/master/images/frenemies.png?raw=true",
+      "date": "2026-10-29",
+      "category": "personal",
+      "id": "frenemies",
+      "shortDescription": "Live multiplayer word games",
+      "tags": [
+        "Flutter",
+        "Mobile",
+        "Web"
+      ],
+      "title": "Frenemies"
+    },
+    {
+      "access": [
+        {
           "color": "#23863778",
           "icon": "mdi:github",
           "id": "Github",
