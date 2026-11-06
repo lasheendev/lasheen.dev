@@ -55,6 +55,19 @@
   ],
   "projects": [
     {
+      "name": "Frenemies",
+      "type": "Multiplayer game",
+      "startDate": "2026-10",
+      "description": "Live multiplayer word games for friends. Players join a room with a short code, link or QR code and play Anagram and Mishmash rounds on their own phones, with no sign-up. Built with Flutter for the web and Android.",
+      "url": "https://frenemi.es",
+      "keywords": [
+        "Flutter",
+        "Multiplayer",
+        "Web",
+        "Android"
+      ]
+    },
+    {
       "name": "flurry_navigation",
       "type": "Open-source Flutter package",
       "startDate": "2019-04",
