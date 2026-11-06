@@ -5,8 +5,11 @@
   import Nav from "$lib/Navbar.svelte";
   import Footer from "$lib/Footer.svelte";
 
-  // Pages under /projects/<app> are plain privacy policies.
-  $: isLegalPage = /^\/projects\/.+/.test($page.url.pathname);
+  // These pages under /projects/ are plain privacy policies.
+  const legalPages = new Set(
+    ["stickers", "surelight.express", "ussd", "wtc"].map((app) => `/projects/${app}`),
+  );
+  $: isLegalPage = legalPages.has($page.url.pathname.replace(/\/$/, ""));
 </script>
 
 <Nav />

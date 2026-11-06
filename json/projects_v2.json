@@ -118,6 +118,7 @@
     {
       "access": [],
       "backgroundImageSource": "/images/projects/viuz.webp",
+      "page": "/projects/viuz",
       "date": "2025-03-03",
       "category": "client",
       "status": "unreleased",
